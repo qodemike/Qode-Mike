@@ -1,16 +1,18 @@
 import styled from "styled-components";
+import Icons from "./components/Icons";
+import Socials from "./components/SocialIcons";
 
 const Grid = styled.div`
   display: grid;
 
-  grid-template-rows: 70px 1fr;
+  grid-template-rows: 71px 1fr;
   grid-template-columns: 1fr;
-    grid-template-areas:
-      " nav "
-      " main ";
+  grid-template-areas:
+    " nav "
+    " main ";
 
-  @media screen and (min-width: 500px) {
-    grid-template-columns: 120px 1fr 120px;
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 9fr 82fr 9fr;
 
     grid-template-areas:
       " nav nav nav"
@@ -18,19 +20,36 @@ const Grid = styled.div`
   }
 `;
 const Nav = styled.div`
-  height: 100%;
-  background-color: red;
-  grid-area: nav;
+grid-area: nav;
 `;
 const SideBarLeft = styled.div`
-  height: 100vh;
-  background-color: orange;
+  height: calc(100vh - 71px);
   grid-area: left;
+  display: none;
+
+  @media screen and (min-width: 768px){
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+  }
 `;
 const SideBarRight = styled.div`
-  height: 100%;
-  background-color: green;
+  height: calc(100vh - 71px);
   grid-area: right;
+  display: none;
+
+  @media screen and (min-width: 768px){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+`;
+const Main = styled.div`
+  grid-area: main;
 `;
 
 function App() {
@@ -38,8 +57,17 @@ function App() {
     <>
       <Grid>
         <Nav></Nav>
-        <SideBarLeft></SideBarLeft>
-        <SideBarRight></SideBarRight>
+        <SideBarLeft>
+          <Socials id="github" />
+          <Socials id="instagram" />
+          <Socials id="twitter" />
+          <Socials id="linkedin" />
+        </SideBarLeft>
+        <SideBarRight>
+          <Icons id="gmail"></Icons>
+        </SideBarRight>
+        <Main>
+        </Main>
       </Grid>
     </>
   );

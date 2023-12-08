@@ -8,14 +8,19 @@
 *,*::after,*::before{
   box-sizing: border-box;
 }
+html{
+  font-size: 62.5%;
+}
 /* body */
 body{
   font-family: "Poppins";
   background-color: var(--color-primary);
 }
 h1{
-  font-family: 'Inter';
+  font-family: 'Inter',Arial, Helvetica, sans-serif;
   font-weight: bold;
+  font-size: 7.0rem;
+  margin: 0;
   color: var(--color-headings);
 }
 h2{
