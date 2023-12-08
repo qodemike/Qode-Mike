@@ -1,0 +1,22 @@
+.HStack {
+    padding:0 10px 0 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.navList{
+    display: flex;
+    align-items: center;
+}
+.navListItem{
+    margin-right: 4rem;
+    font-size: 1.3rem;
+    font-family: "JetBrains Mono";
+}
+.anchor {
+  color: var(--color-body);
+}
+.anchor:hover {
+  color: var(--color-accent);
+}

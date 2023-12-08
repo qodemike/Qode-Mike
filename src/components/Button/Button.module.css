@@ -1,0 +1,15 @@
+.btn {
+  background: none;
+  border: 1px solid var(--color-accent);
+  border-radius: 5px;
+  color: var(--color-accent);
+  font-family: "JetBrains Mono";
+  font-size: 1.3rem;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+  cursor: pointer;
+}

@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import Icons from "./components/Icons";
-import Socials from "./components/SocialIcons";
+import NavBar from "./components/NavBar";
 
 const Grid = styled.div`
   display: grid;
@@ -20,19 +19,19 @@ const Grid = styled.div`
   }
 `;
 const Nav = styled.div`
-grid-area: nav;
+  grid-area: nav;
 `;
 const SideBarLeft = styled.div`
   height: calc(100vh - 71px);
   grid-area: left;
   display: none;
 
-  @media screen and (min-width: 768px){
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 40px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
   }
 `;
 const SideBarRight = styled.div`
@@ -40,13 +39,13 @@ const SideBarRight = styled.div`
   grid-area: right;
   display: none;
 
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 40px;
-}
+  }
 `;
 const Main = styled.div`
   grid-area: main;
@@ -56,18 +55,12 @@ function App() {
   return (
     <>
       <Grid>
-        <Nav></Nav>
-        <SideBarLeft>
-          <Socials id="github" />
-          <Socials id="instagram" />
-          <Socials id="twitter" />
-          <Socials id="linkedin" />
-        </SideBarLeft>
-        <SideBarRight>
-          <Icons id="gmail"></Icons>
-        </SideBarRight>
-        <Main>
-        </Main>
+        <Nav>
+          <NavBar />
+        </Nav>
+        <SideBarLeft></SideBarLeft>
+        <SideBarRight></SideBarRight>
+        <Main></Main>
       </Grid>
     </>
   );

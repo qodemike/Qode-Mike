@@ -1,36 +1,41 @@
-:root{
-  --color-primary: #06071C;
-  --color-secondary: #8892B0;
-  --color-accent: #1BFEF4;
-  --color-headings: #E6F1FF;
-  --color-body:#A8B2D1;
+:root {
+  --color-primary: #06071c;
+  --color-secondary: #8892b0;
+  --color-accent: #1bfef4;
+  --color-headings: #e6f1ff;
+  --color-body: #a8b2d1;
 }
-*,*::after,*::before{
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
-html{
+html {
   font-size: 62.5%;
 }
-/* body */
-body{
+body {
   font-family: "Poppins";
   background-color: var(--color-primary);
 }
-h1{
-  font-family: 'Inter',Arial, Helvetica, sans-serif;
+a {
+  text-decoration: none;
+}
+h1 {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   font-weight: bold;
-  font-size: 7.0rem;
+  font-size: 7rem;
   margin: 0;
   color: var(--color-headings);
 }
-h2{
-  font-family: 'JetBrains';
+h2 {
+  font-family: "JetBrains";
   color: var(--color-accent);
 }
 @font-face {
-  font-family: 'JetBrains';
-  src: url('./assets/fonts/jetbrainsmono-regular-webfont.woff2') format('woff2'),
-       url('./assets/fonts/jetbrainsmono-regular-webfont.woff') format('woff');
+  font-family: "JetBrains Mono";
+  src: url("./assets/fonts/jetbrainsmono-regular-webfont.woff2") format("woff2"),
+    url("./assets/fonts/jetbrainsmono-regular-webfont.woff") format("woff");
 }
-
-
+ul{
+  list-style: none;
+}
