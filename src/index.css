@@ -1,5 +1,5 @@
 :root {
-  --color-primary: #06071c;
+  --color-primary: #07081F;
   --color-secondary: #8892b0;
   --color-accent: #1bfef4;
   --color-headings: #e6f1ff;
@@ -36,6 +36,6 @@ h2 {
   src: url("./assets/fonts/jetbrainsmono-regular-webfont.woff2") format("woff2"),
     url("./assets/fonts/jetbrainsmono-regular-webfont.woff") format("woff");
 }
-ul{
+li{
   list-style: none;
 }

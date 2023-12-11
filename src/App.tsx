@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import NavBar from "./components/NavBar";
+import Button from "./components/Button";
+import styles from "./App.module.css";
 
 const Grid = styled.div`
   display: grid;
@@ -60,7 +62,7 @@ function App() {
         </Nav>
         <SideBarLeft></SideBarLeft>
         <SideBarRight></SideBarRight>
-        <Main></Main>
+        <Main><Button style={{padding:'var(--padding-large)'}}>Get In Touch</Button></Main>
       </Grid>
     </>
   );
