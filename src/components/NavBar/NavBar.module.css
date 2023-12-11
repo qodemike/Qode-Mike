@@ -13,9 +13,10 @@
     align-items: center;
 }
 .navListItem{
+    display:flex;
     margin-right: 4rem;
     font-size: 1.3rem;
-    font-family: "JetBrains Mono";
+    font-family: "JetBrains";
 }
 .anchor {
   color: var(--color-body);
@@ -23,4 +24,9 @@
 }
 .anchor:hover {
   color: var(--color-accent);
+}
+.navListItem > img{
+  align-self: center;
+  margin-right: 12px;
+  padding-bottom: 3px;
 }

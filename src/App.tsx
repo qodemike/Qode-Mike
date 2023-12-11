@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import NavBar from "./components/NavBar";
-import Button from "./components/Button";
 import styles from "./App.module.css";
+import {SideBarRight} from "./components/SideBarRight/SideBarRight";
+import SideBarLeft from "./components/SideBarLeft/SideBarLeft";
 
 const Grid = styled.div`
   display: grid;
@@ -13,7 +14,7 @@ const Grid = styled.div`
     " main ";
 
   @media screen and (min-width: 768px) {
-    grid-template-columns: 9fr 82fr 9fr;
+    grid-template-columns: 120px 82fr 120px;
 
     grid-template-areas:
       " nav nav nav"
@@ -23,7 +24,7 @@ const Grid = styled.div`
 const Nav = styled.div`
   grid-area: nav;
 `;
-const SideBarLeft = styled.div`
+const Left = styled.div`
   height: calc(100vh - 71px);
   grid-area: left;
   display: none;
@@ -36,7 +37,7 @@ const SideBarLeft = styled.div`
     gap: 40px;
   }
 `;
-const SideBarRight = styled.div`
+const Right = styled.div`
   height: calc(100vh - 71px);
   grid-area: right;
   display: none;
@@ -60,9 +61,13 @@ function App() {
         <Nav>
           <NavBar />
         </Nav>
-        <SideBarLeft></SideBarLeft>
-        <SideBarRight></SideBarRight>
-        <Main><Button style={{padding:'var(--padding-large)'}}>Get In Touch</Button></Main>
+        <Left>
+          <SideBarLeft/>
+        </Left>
+        <Right>
+         <SideBarRight/>          
+        </Right>
+        <Main></Main>
       </Grid>
     </>
   );

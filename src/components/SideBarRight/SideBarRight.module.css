@@ -1,0 +1,19 @@
+.email{
+    display: flex;
+    transform: rotate(90deg);
+    transition: all 0.2s ease;
+}
+.email:hover{
+    color: var(--color-accent);
+}
+
+.email > p{
+    color: var(--color-secondary);
+    font-family: JetBrains;
+    font-size: 1.4rem;
+    margin-left: 10px ;
+}
+
+.email > p:hover{
+    color: var(--color-accent);
+}

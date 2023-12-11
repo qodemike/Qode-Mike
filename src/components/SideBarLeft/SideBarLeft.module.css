@@ -1,0 +1,5 @@
+.socialIcons > img{
+    width: 30px;
+    color: var(--color-secondary);
+    fill: var(--color-secondary);
+}

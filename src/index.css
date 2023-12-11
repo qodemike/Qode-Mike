@@ -19,6 +19,7 @@ body {
 }
 a {
   text-decoration: none;
+  color: var(--color-secondary);
 }
 h1 {
   font-family: "Inter", Arial, Helvetica, sans-serif;
@@ -31,8 +32,11 @@ h2 {
   font-family: "JetBrains";
   color: var(--color-accent);
 }
+p{
+  margin: 0;
+}
 @font-face {
-  font-family: "JetBrains Mono";
+  font-family: "JetBrains";
   src: url("./assets/fonts/jetbrainsmono-regular-webfont.woff2") format("woff2"),
     url("./assets/fonts/jetbrainsmono-regular-webfont.woff") format("woff");
 }
