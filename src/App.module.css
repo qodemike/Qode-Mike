@@ -1,0 +1,64 @@
+/* Grid Layout */
+.grid {
+  display: grid;
+
+  grid-template-rows: 71px 1fr;
+  grid-template-columns: 1fr;
+  
+  grid-template-areas:
+    " nav "
+    " main ";
+}
+@media screen and (min-width: 769px) {
+  .grid {
+    grid-template-columns: 120px 82fr 120px;
+
+    grid-template-areas:
+      " nav nav nav"
+      " left main right";
+  }
+}
+
+/* Navigation */
+.nav {
+  grid-area: nav;
+}
+
+/* Side Bar Left */
+.left {
+  height: calc(100vh - 71px);
+  grid-area: left;
+  display: none;
+}
+@media screen and (min-width: 769px) {
+  .left {
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+}
+
+/* Side Bar Right */
+.right {
+  background-color: yellow;
+  height: calc(100vh - 71px);
+  grid-area: right;
+  display: none;
+}
+@media screen and (min-width: 769px) {
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+}
+
+/* Main */
+.main{
+  grid-area: main;
+}

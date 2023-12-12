@@ -1,20 +1,22 @@
 import styles from "./SideBarLeft.module.css";
-import Linkedin from "../../assets/linkedin.svg";
-import Instagram from "../../assets/instagram.svg";
-import Socials from "../../assets/socials.svg";
+import Socials from '../../assets/socials.svg';
 
 const SideBarLeft = () => {
-  const socials = [
-    "github",
-    "instagram",
-    "linkedin",
-    "twitter",
-  ];
+  const socials = [ "github", ]
   return (
     <>
-      <div className={styles.socialIcons}>
-
-      </div>
+        <svg className={styles.icon}>
+          <use xlinkHref={`${Socials}#twitter`}></use>
+        </svg>
+        <svg className={styles.icon}>
+          <use xlinkHref={`${Socials}#instagram`}></use>
+        </svg>
+        <svg className={styles.icon}>
+          <use xlinkHref={`${Socials}#github`}></use>
+        </svg>
+        <svg className={styles.icon}>
+          <use xlinkHref={`${Socials}#linkedin-outline`}></use>
+        </svg>
     </>
   );
 };

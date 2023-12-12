@@ -1,5 +1,8 @@
-.socialIcons > img{
-    width: 30px;
-    color: var(--color-secondary);
+.icon{
+    width: 40px;
+    height: 40px;
     fill: var(--color-secondary);
+}
+.icon:hover{
+    fill: var(--color-accent);
 }

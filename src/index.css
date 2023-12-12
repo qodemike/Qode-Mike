@@ -40,6 +40,8 @@ p{
   src: url("./assets/fonts/jetbrainsmono-regular-webfont.woff2") format("woff2"),
     url("./assets/fonts/jetbrainsmono-regular-webfont.woff") format("woff");
 }
-li{
+ul{
+  margin: 0;
   list-style: none;
+  padding: 0;
 }
