@@ -1,8 +1,9 @@
 import NavBar from "./components/NavBar";
 import styles from "./App.module.css";
-import { SideBarRight } from "./components/SideBarRight/SideBarRight";
+import { SideBarRight } from "./components/SideBarRight";
 import SideBarLeft from "./components/SideBarLeft/SideBarLeft";
 import Hero from "./components/Hero/Hero";
+import AboutMe from "./components/AboutMe";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         </div>
         <main className={styles.main}>
           <Hero/>
+          <AboutMe/>
         </main>
       </div>
     </>

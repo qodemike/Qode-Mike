@@ -35,6 +35,6 @@
   transform: scaleX(1);
 }
 .btn:active{
-  background-color: rgb(3, 192, 192);
-  border:1px solid rgb(3, 192, 192);
+  background-color: var(--color-accent-dark);
+  border: 1px solid var(--color-accent-dark);
 }

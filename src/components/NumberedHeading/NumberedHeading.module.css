@@ -1,0 +1,27 @@
+
+.box{
+    display: flex;
+    align-items: center;
+}
+.number{
+    font-family: SFMono;
+    font-size: 1.6rem;
+    color: var(--color-accent);
+    margin-right: 1rem;
+}
+.heading{
+    margin: 0;
+    white-space: nowrap;
+    display: inline;
+    font-size: 3.2rem;
+}
+.line{
+    width: 100%;
+    margin-left: 3rem;
+}
+
+@media screen and (min-width: 500px) {
+    .number{
+        font-size: 2.4rem;
+    }
+}

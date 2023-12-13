@@ -6,7 +6,7 @@ const Hero = () => {
     <>
     <section className={styles.hero}>
       <div>
-      <p className={styles.salutation}>Hi, my name is</p>
+      <p className={styles.salutations}>Hi there, my name is</p>
       <h1 className={styles.heading} >Michael W. Titus</h1>
       <p className={styles.tagline}>I will radiate your digital prescence</p>
       <p className={styles.text}>

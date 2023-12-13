@@ -5,6 +5,7 @@ const SideBarLeft = () => {
   const socials = ["github", "twitter", "instagram", "linkedin-outline"];
   return (
     <>
+    <div className={styles.box} >
       {socials.map((s, index) => (
         <a href="">
         <svg key={index} className={styles.icon} >
@@ -12,6 +13,7 @@ const SideBarLeft = () => {
         </svg>
         </a>
       ))}
+    </div>
     </>
   );
 };
