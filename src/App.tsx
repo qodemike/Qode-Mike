@@ -2,23 +2,25 @@ import NavBar from "./components/NavBar";
 import styles from "./App.module.css";
 import { SideBarRight } from "./components/SideBarRight/SideBarRight";
 import SideBarLeft from "./components/SideBarLeft/SideBarLeft";
+import Hero from "./components/Hero/Hero";
 
 
 function App() {
   return (
     <>
       <div className={styles.grid}>
-        <nav className={styles.nav}>
+        <div className={styles.nav}>
           <NavBar />
-        </nav>
+        </div>
         <div className={styles.left}>
           <SideBarLeft />
         </div>
         <div className={styles.right}>
           <SideBarRight />
         </div>
-        <div className={styles.main}>
-        </div>
+        <main className={styles.main}>
+          <Hero/>
+        </main>
       </div>
     </>
   );

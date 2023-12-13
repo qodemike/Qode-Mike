@@ -11,7 +11,7 @@
 }
 @media screen and (min-width: 769px) {
   .grid {
-    grid-template-columns: 120px 82fr 120px;
+    grid-template-columns: 100px 82fr 100px;
 
     grid-template-areas:
       " nav nav nav"
@@ -29,21 +29,19 @@
   height: calc(100vh - 71px);
   grid-area: left;
   display: none;
+  gap: 40px;
 }
 @media screen and (min-width: 769px) {
   .left {
-    background-color: green;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 40px;
   }
 }
 
 /* Side Bar Right */
 .right {
-  background-color: yellow;
   height: calc(100vh - 71px);
   grid-area: right;
   display: none;
@@ -54,11 +52,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 40px;
   }
 }
 
 /* Main */
 .main{
-  grid-area: main;
+ grid-area: main;
+ padding: 0 10%;
 }

@@ -21,27 +21,32 @@ a {
   text-decoration: none;
   color: var(--color-secondary);
 }
-h1 {
-  font-family: "Inter", Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 7rem;
-  margin: 0;
-  color: var(--color-headings);
-}
+
 h2 {
   font-family: "JetBrains";
   color: var(--color-accent);
 }
 p{
   margin: 0;
+  font-family: Poppins;
+}
+ul{
+  margin: 0;
+  list-style: none;
+  padding: 0;
 }
 @font-face {
   font-family: "JetBrains";
   src: url("./assets/fonts/jetbrainsmono-regular-webfont.woff2") format("woff2"),
     url("./assets/fonts/jetbrainsmono-regular-webfont.woff") format("woff");
 }
-ul{
-  margin: 0;
-  list-style: none;
-  padding: 0;
+
+
+/* Scrollbar */
+::-webkit-scrollbar{
+  width: 5px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: var(--color-secondary);
+  border-radius: 50px;
 }

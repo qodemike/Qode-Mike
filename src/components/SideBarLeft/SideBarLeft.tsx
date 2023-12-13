@@ -1,22 +1,17 @@
 import styles from "./SideBarLeft.module.css";
-import Socials from '../../assets/socials.svg';
+import Socials from "../../assets/socials.svg";
 
 const SideBarLeft = () => {
-  const socials = [ "github", ]
+  const socials = ["github", "twitter", "instagram", "linkedin-outline"];
   return (
     <>
-        <svg className={styles.icon}>
-          <use xlinkHref={`${Socials}#twitter`}></use>
+      {socials.map((s, index) => (
+        <a href="">
+        <svg key={index} className={styles.icon} >
+          <use xlinkHref={`${Socials}#${s}`}></use>
         </svg>
-        <svg className={styles.icon}>
-          <use xlinkHref={`${Socials}#instagram`}></use>
-        </svg>
-        <svg className={styles.icon}>
-          <use xlinkHref={`${Socials}#github`}></use>
-        </svg>
-        <svg className={styles.icon}>
-          <use xlinkHref={`${Socials}#linkedin-outline`}></use>
-        </svg>
+        </a>
+      ))}
     </>
   );
 };

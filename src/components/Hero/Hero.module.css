@@ -1,0 +1,40 @@
+.hero {
+  height: calc(90vh - 71px);
+  display: flex;
+  align-items: center;
+  margin-bottom: 23rem;
+}
+.salutation {
+  color: var(--color-accent);
+  font-family: JetBrains;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+}
+.heading {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin: 0;
+  font-size: 7rem;
+  color: var(--color-headings);
+}
+
+.tagline {
+  margin-top: 0.5rem;
+  font-family: Inter;
+  color: var(--color-secondary);
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.text {
+  margin-top: 3rem;
+  max-width: 50rem;
+  line-height: 2.6rem;
+  color: var(--color-secondary);
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 769px) {
+  .text{
+  }
+}
