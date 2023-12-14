@@ -5,7 +5,7 @@ import passport from "../../assets/profile_image.jpg";
 const AboutMe = () => {
   return (
     <>
-      <section>
+      <section className={styles.aboutMe}>
         <header>
           <NumberedHeading heading="About Me" number={"01."} />
         </header>

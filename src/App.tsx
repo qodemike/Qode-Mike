@@ -4,6 +4,8 @@ import { SideBarRight } from "./components/SideBarRight";
 import SideBarLeft from "./components/SideBarLeft/SideBarLeft";
 import Hero from "./components/Hero/Hero";
 import AboutMe from "./components/AboutMe";
+import Skills from "./components/Skills";
+import Technologies from "./components/Technologies";
 
 
 function App() {
@@ -22,6 +24,8 @@ function App() {
         <main className={styles.main}>
           <Hero/>
           <AboutMe/>
+          <Skills/>
+          <Technologies/>
         </main>
       </div>
     </>

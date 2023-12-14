@@ -1,5 +1,5 @@
 import styles from "./SideBarLeft.module.css";
-import Socials from "../../assets/socials.svg";
+import Socials from "../../assets/sprite-socials.svg";
 
 const SideBarLeft = () => {
   const socials = ["github", "twitter", "instagram", "linkedin-outline"];

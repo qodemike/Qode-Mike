@@ -24,8 +24,10 @@ a {
   color: var(--color-secondary);
 }
 h2{
+  margin: 0;
   font-family: Inter;
   color: var(--color-headings);
+  font-size: 2.6rem;
 }
 h3 {
   font-family: "JetBrains";
@@ -35,6 +37,8 @@ p{
   margin: 0;
   font-family: Poppins;
   line-height: 2.6rem;
+  color: var(--color-secondary);
+  font-size: 1.6rem;
 }
 ul{
   margin: 0;

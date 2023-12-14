@@ -1,0 +1,35 @@
+.skillsAndServices {
+  margin: 0 auto 20rem;
+  max-width: 50rem;
+}
+
+.skillsAndServices > article {
+  margin-top: 3rem;
+}
+.header {
+  display: flex;
+  align-items: center;
+}
+.header > h2 {
+  white-space: nowrap;
+}
+.line{
+    width: 100%;
+    margin-left: 2rem ;
+    border-bottom:1px solid rgba(255,255, 255, 0.18);
+}
+.service {
+  margin-bottom: 1.8rem;
+  display: flex;
+  align-items: start;
+}
+.service > p {
+  color: var(--color-secondary);
+  margin-left: 2rem;
+  font-size: 1.6rem;
+}
+.service > img{
+    margin-top: 1.1rem;
+    width: 5px;
+    height: 5px;
+}

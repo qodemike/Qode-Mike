@@ -7,7 +7,7 @@ import { useState } from 'react';
 
 const NavBar = () => {
   const [collapsed, setCollapsed] = useState(false);
-  
+
   return (
     <>
       <header className={`${styles.header} ${ collapsed ? `${styles.collapsed}` : ""}` }>
