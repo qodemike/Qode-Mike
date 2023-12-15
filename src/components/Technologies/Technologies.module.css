@@ -16,7 +16,7 @@
   color: var(--color-accent);
 }
 .iconList{
-    max-width: 70rem;
+    max-width: 85rem;
     margin: 5rem 0 6rem;
     display: flex;
     justify-content: center;
@@ -24,7 +24,7 @@
     gap: 4rem;
 }
 .iconListItem{
-    width: 80px;
+    width: 8rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,7 +32,6 @@
 .iconListItem > svg{
     width: 50px;
     height: 50px;
-    max-height: 5rem;
 }
 .iconListItem > span{
     margin-top: 0.9rem;

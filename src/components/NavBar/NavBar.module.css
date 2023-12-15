@@ -24,7 +24,6 @@
 }
 .anchor {
   color: var(--color-body);
-  transition: all 0.3s ease;
 }
 .anchor:hover {
   color: var(--color-accent);

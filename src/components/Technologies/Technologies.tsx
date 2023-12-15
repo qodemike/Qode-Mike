@@ -2,26 +2,27 @@ import NumberedHeading from "../NumberedHeading";
 import styles from "./Technologies.module.css";
 import icons from "../../assets/sprite-langauges.svg";
 import Button from "../Button";
+import { Link } from "react-router-dom";
 
 const Technologies = () => {
   const languages = [
     "HTML",
     "CSS",
     "Javascript",
-    "Node.js",
+    "Node JS",
     "PHP",
     "Typescript",
-    "React",
+    "React JS",
     "Material UI",
     "Bootstrap",
-    "MySQL",
+    "My SQL",
     "Wordpress",
     "MongoDB",
   ];
   return (
     <section className={styles.technologies}>
       <header>
-        <NumberedHeading number="02." heading="My Tools and Tech" />
+        <NumberedHeading number="02." title="My Tools and Tech" />
       </header>
       <article className={styles.content}>
         <p className={styles.text}>
@@ -29,7 +30,7 @@ const Technologies = () => {
           that are commonly sought. Click <span>See Full List</span> for full
           detail of my arsenal
         </p>
-        <ul  className={styles.iconList}>
+        <ul className={styles.iconList}>
           {languages.map((language, index) => (
             <li key={index} className={styles.iconListItem}>
               <svg>
@@ -39,7 +40,7 @@ const Technologies = () => {
             </li>
           ))}
         </ul>
-        <Button>See Full List</Button>
+        <Link to={'/tools_and_technologies'}><Button>See Full List</Button></Link>
       </article>
     </section>
   );

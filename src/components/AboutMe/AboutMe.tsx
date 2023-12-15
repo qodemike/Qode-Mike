@@ -7,7 +7,7 @@ const AboutMe = () => {
     <>
       <section className={styles.aboutMe}>
         <header>
-          <NumberedHeading heading="About Me" number={"01."} />
+          <NumberedHeading title="About Me" number={"01."} />
         </header>
         <article className={styles.content}>
           <p className={styles.text}>

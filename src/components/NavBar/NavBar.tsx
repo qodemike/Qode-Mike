@@ -4,6 +4,7 @@ import Logo from '../../assets/logo.svg';
 import Bullet from '../../assets/Bullet Point.png';
 import MenuIcon from '../../assets/hamburger-menu-icon.svg';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   const [collapsed, setCollapsed] = useState(false);
@@ -12,7 +13,7 @@ const NavBar = () => {
     <>
       <header className={`${styles.header} ${ collapsed ? `${styles.collapsed}` : ""}` }>
         <nav className={styles.nav}>
-          <img className={styles.Logo} src={Logo} alt="Qode Mike logo image"/>
+          <Link to={'/'}> <img className={styles.Logo} src={Logo} alt="Qode Mike logo image"/></Link>
           <ul className={`${styles.navList} ${collapsed? `${styles.collapsed}`: ""}`}>
             <li className={styles.navListItem}> <img src={Bullet}/> <a className={styles.anchor} href="">About Me</a></li>
             <li className={styles.navListItem}> <img src={Bullet}/> <a className={styles.anchor} href="">Tools and Technologies</a></li>

@@ -30,8 +30,11 @@ h2{
   font-size: 2.6rem;
 }
 h3 {
-  font-family: "JetBrains";
+  margin: 0;
+  font-family: "SFMono";
   color: var(--color-accent);
+  font-size: 2rem;
+  font-weight: 300;
 }
 p{
   margin: 0;
@@ -39,6 +42,7 @@ p{
   line-height: 2.6rem;
   color: var(--color-secondary);
   font-size: 1.6rem;
+  font-weight: 300;
 }
 ul{
   margin: 0;
@@ -59,8 +63,8 @@ ul{
 
 /* Scrollbar */
 ::-webkit-scrollbar{
-  width: 5px;
-  height: 5px;
+  width: 3px;
+  height: 3px;
 }
 ::-webkit-scrollbar-thumb{
   background-color: var(--color-secondary);
