@@ -39,8 +39,3 @@
     font-size: 1.6rem;
     text-wrap: nowrap;
 }
-@media screen and (min-width: 600px) {
-    .iconList{
-        justify-content: start;
-    }
-}

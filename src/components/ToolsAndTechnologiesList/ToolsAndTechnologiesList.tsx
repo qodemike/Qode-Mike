@@ -1,5 +1,5 @@
 import styles from "./ToolsAndTechnologiesList.module.css";
-import languageIcon from "../../assets/sprite-langauges.svg";
+import languageIcons from "../../assets/sprite-languages.svg";
 
 const ToolsAndTechnologiesList = () => {
   const technologies = {
@@ -27,7 +27,7 @@ const ToolsAndTechnologiesList = () => {
           stack[1].map((language) => (
             <li className={styles.iconListItem}>
             <svg>
-              <use xlinkHref={`${languageIcon}#${language}`} />
+              <use xlinkHref={`${languageIcons}#${language}`} />
             </svg>
             <span>{language}</span>
             </li>

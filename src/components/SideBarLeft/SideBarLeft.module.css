@@ -3,9 +3,8 @@
     align-self: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 40px;
+    
 }
 .icon{
     width: 23px;

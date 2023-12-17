@@ -10,6 +10,7 @@ const Skills = () => {
     "e-commerce web applications.",
     "Database design, modeling and management.",
     "SEO Implementation.",
+    "Site Optimization",
     "Unit and Integration testing.",
     "Consultation",
   ];
@@ -23,8 +24,8 @@ const Skills = () => {
         </header>
         <article>
           <ul>
-            {services.map((s) => (
-              <li className={styles.service}>
+            {services.map((s, index) => (
+              <li key={index} className={styles.service}>
                 <img src={BulletPoint} /> <p>{s}</p>
               </li>
             ))}

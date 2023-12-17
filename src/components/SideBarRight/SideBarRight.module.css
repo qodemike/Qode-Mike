@@ -5,7 +5,7 @@
     width: 20px;
     height: 190px;
     fill: var(--color-body);
-    transition: transform 0.3s ease;
+    transition: all 0.2s ease;
 }
 .email > svg:hover{
     fill: var(--color-accent);

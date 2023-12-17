@@ -1,0 +1,133 @@
+.project {
+  margin: auto;
+  max-width: 900px;
+  margin-bottom: 15rem;
+  display: flex;
+  align-items: center;
+}
+.imgContainer {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+/* Main img */
+.projectImg {
+  object-fit: cover;
+  width: 100%;
+}
+/* Image Curtain */
+.imgContainer > picture::before {
+  content: "";
+  width: 50%;
+  height: 100%;
+  background-color: var(--color-curtain);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transform-origin: 0 0;
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+
+.imgContainer > picture::after {
+  content: "";
+  width: 50%;
+  height: 100%;
+  background-color: var(--color-curtain);
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 1;
+  transform-origin: 0 100%;
+  transform: scaleX(-1);
+  transition: all 0.3s ease;
+}
+
+/* Detail Section */
+.projectDetails {
+  z-index: 2;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  gap: 2vw ;
+}
+.projectDetails h3 {
+  text-wrap: nowrap;
+  transition: all 0.1s ease;
+}
+.projectDetails h3:hover {
+  color: var(--color-accent-dark);
+}
+
+.projectDetails p {
+  text-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+  font-size: 1.5rem;
+  text-align: right;
+  color: var(--color-body);
+}
+.iconList {
+  display: flex;
+  gap: 20px;
+}
+.iconListItem > svg {
+  width: 33px;
+  height: 33px;
+}
+
+.descriptionCard {
+  width: 400px;
+  border-radius: 5px;
+  padding: 2rem;
+  background: rgba(27, 254, 244, 10%);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(62px);
+  -webkit-backdrop-filter: blur(62px);
+}
+
+/* Desktop Behaviour */
+@media screen and (min-width: 1024px) {
+  .imgContainer > picture:hover::before {
+    transform: scaleX(0);
+  }
+  .imgContainer > picture:hover::after {
+    transform: scaleX(0);
+  }
+}
+/* Tablets */
+@media screen and (max-width: 1024px) {
+  .imgContainer {
+    box-shadow: 5px 10px 20px #03030d;
+  }
+  .imgContainer > picture::before {
+    width: 0;
+  }
+  .imgContainer > picture::after {
+    width: 100%;
+    background: rgba(8, 32, 50, 76%);
+  }
+  .projectDetails {
+    width: 60%;
+    position: absolute;
+  }
+}
+/* Mini Tablets */
+@media screen and (max-width: 768px) {
+  .projectDetails {
+    width: 80%;
+  }
+}
+
+/* Phones */
+@media screen and (max-width: 500px) {
+    .descriptionCard{
+      width: 270px;
+    }
+}

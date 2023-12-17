@@ -7,8 +7,8 @@ const SideBarLeft = () => {
     <>
     <div className={styles.box} >
       {socials.map((s, index) => (
-        <a href="">
-        <svg key={index} className={styles.icon} >
+        <a key={index} href="">
+        <svg  className={styles.icon} >
           <use xlinkHref={`${Socials}#${s}`}></use>
         </svg>
         </a>

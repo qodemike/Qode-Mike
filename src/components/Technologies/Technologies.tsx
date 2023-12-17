@@ -1,6 +1,6 @@
 import NumberedHeading from "../NumberedHeading";
 import styles from "./Technologies.module.css";
-import icons from "../../assets/sprite-langauges.svg";
+import icons from "../../assets/sprite-languages.svg";
 import Button from "../Button";
 import { Link } from "react-router-dom";
 
@@ -22,7 +22,7 @@ const Technologies = () => {
   return (
     <section className={styles.technologies}>
       <header>
-        <NumberedHeading number="02." title="My Tools and Tech" />
+        <NumberedHeading number="02." title="My Arsenal" />
       </header>
       <article className={styles.content}>
         <p className={styles.text}>
@@ -40,7 +40,7 @@ const Technologies = () => {
             </li>
           ))}
         </ul>
-        <Link to={'/tools_and_technologies'}><Button>See Full List</Button></Link>
+        <Link to={'/tools-and-technologies'}><Button>See Full List</Button></Link>
       </article>
     </section>
   );

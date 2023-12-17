@@ -6,10 +6,10 @@ import HomePage from "./pages/HomePage";
 const routes = createBrowserRouter([
   {
     path: "/",
-    element: <Layout />,
+    element: <Layout/>,
     children: [
         { path: "", element: <HomePage /> },
-        {path: "tools_and_technologies", element: <TechnologiesPage/>}
+        { path: "tools-and-technologies", element: <TechnologiesPage/>}
     ],
   },
 ]);

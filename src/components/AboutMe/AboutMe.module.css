@@ -12,7 +12,7 @@
     .content{
         flex-direction: row;
         justify-content: center;
-        align-items: start;
+        align-items: center;
     }
 }
 .text{

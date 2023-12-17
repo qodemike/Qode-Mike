@@ -1,6 +1,6 @@
 import NumberedHeading from "../NumberedHeading";
 import styles from "./AboutMe.module.css";
-import passport from "../../assets/profile_image.jpg";
+import passport from "../../assets/profile_image.webp";
 
 const AboutMe = () => {
   return (

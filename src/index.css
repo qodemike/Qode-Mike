@@ -1,11 +1,13 @@
 /* Global Properties */
 :root {
-  --color-primary: #07081F;
+  --color-primary: #06071c;
   --color-secondary: #8892b0;
   --color-accent: #1bfef4;
-  --color-accent-dark: rgb(3, 192, 192) ;
+  --color-accent-dark: rgb(3, 192, 192);
   --color-headings: #e6f1ff;
   --color-body: #a8b2d1;
+  --color-curtain: rgba(27, 254, 244, 29%);
+  --color-line: rgba(255, 255, 255, 0.18);
 }
 *,
 *::after,
@@ -16,35 +18,34 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-family: "Poppins";
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   background-color: var(--color-primary);
 }
 a {
   text-decoration: none;
   color: var(--color-secondary);
 }
-h2{
+h2 {
   margin: 0;
-  font-family: Inter;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   color: var(--color-headings);
   font-size: 2.6rem;
 }
 h3 {
   margin: 0;
-  font-family: "SFMono";
+  font-family: "JetBrains";
   color: var(--color-accent);
   font-size: 2rem;
   font-weight: 300;
 }
-p{
+p {
   margin: 0;
   font-family: Poppins;
   line-height: 2.6rem;
   color: var(--color-secondary);
   font-size: 1.6rem;
-  font-weight: 300;
 }
-ul{
+ul {
   margin: 0;
   list-style: none;
   padding: 0;
@@ -57,21 +58,20 @@ ul{
 @font-face {
   font-family: "JetBrains";
   src: url("./assets/fonts/jetbrainsmono-regular-webfont.woff2") format("woff2"),
-        url("./assets/fonts/jetbrainsmono-regular-webfont.woff") format("woff");
-
+    url("./assets/fonts/jetbrainsmono-regular-webfont.woff") format("woff");
 }
 
 /* Scrollbar */
-::-webkit-scrollbar{
-  width: 3px;
-  height: 3px;
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background-color: var(--color-secondary);
   border-radius: 50px;
 }
 
-::selection{
+::selection {
   background-color: var(--color-accent);
   color: var(--color-primary);
 }
