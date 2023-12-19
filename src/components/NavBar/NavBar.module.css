@@ -19,6 +19,11 @@
 
 .Logo {
   width: 40px;
+  height: 40px;
+  fill: var(--color-accent);
+}
+.Logo:hover{
+  fill: var(--color-accent-dark);
 }
 .anchor {
   color: var(--color-body);

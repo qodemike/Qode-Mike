@@ -10,7 +10,7 @@ const Hero = () => {
       <h1 className={styles.heading} >Michael W. Titus</h1>
       <p className={styles.tagline}>I will radiate your digital prescence</p>
       <p className={styles.text}>
-        I'm a passionate Full-Stack Web Developer in search of exciting
+        I'm a passionate <span>Full-Stack Web Developer</span> in search of exciting
         web-based projects to challenge and extend my expertise as a
         professional developer.
       </p>

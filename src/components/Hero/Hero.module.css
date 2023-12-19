@@ -32,3 +32,6 @@
   margin-top: 4rem;
   max-width: 50rem;
 }
+.text > span{
+  color: var(--color-accent);
+}

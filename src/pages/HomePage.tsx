@@ -1,17 +1,19 @@
 import AboutMe from "../components/AboutMe";
 import Hero from "../components/Hero/Hero";
 import Portfolio from "../components/MyPortfolio";
-import Skills from "../components/Skills";
+import SkillSection from "../components/SkillSection";
 import Technologies from "../components/Technologies";
+import ContactPage from "../components/ContactPage";
 
 const HomePage = () => {
   return (
     <>
       <Hero />
       <AboutMe />
-      <Skills />
+      <SkillSection />
       <Technologies/>
       <Portfolio />
+      <ContactPage/>
     </>
   );
 };

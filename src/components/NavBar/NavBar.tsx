@@ -1,10 +1,10 @@
 import styles from "./NavBar.module.css";
 import Button from "../Button";
-import Logo from "../../assets/logo.svg";
 import Bullet from "../../assets/Bullet Point.png";
 import MenuIcon from "../../assets/hamburger-menu-icon.svg";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import sprite from '../../assets/sprite.svg';
 
 const NavBar = () => {
   const [collapsed, setCollapsed] = useState(false);
@@ -34,18 +34,16 @@ const NavBar = () => {
 
   return (
     <>
-      <header
+      <div
         className={`${styles.header}  ${isVisible ? `${styles.visible}` : ""} ${
           collapsed ? `${styles.collapsed}` : ""
         }`}
       >
         <nav className={styles.nav}>
           <Link to={"/"}>
-            <img
-              className={styles.Logo}
-              src={Logo}
-              alt="Qode Mike logo image"
-            />
+            <svg className={styles.Logo}>
+              <use xlinkHref={`${sprite}#Logo`}></use>
+            </svg>
           </Link>
           <ul
             className={`${styles.navList} ${
@@ -86,7 +84,7 @@ const NavBar = () => {
             <img src={MenuIcon} alt="hamburger menu icon" />
           </button>
         </nav>
-      </header>
+      </div>
     </>
   );
 };

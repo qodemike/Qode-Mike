@@ -2,7 +2,7 @@ import styles from "./SideBarLeft.module.css";
 import Socials from "../../assets/sprite-socials.svg";
 
 const SideBarLeft = () => {
-  const socials = ["github", "twitter", "instagram", "linkedin-outline"];
+  const socials = ["twitter", "github", "instagram", "linkedin-outline"];
   return (
     <>
     <div className={styles.box} >
@@ -13,6 +13,7 @@ const SideBarLeft = () => {
         </svg>
         </a>
       ))}
+      <div className={styles.line}></div>
     </div>
     </>
   );

@@ -1,18 +1,23 @@
 .box{
     position: fixed;
-    align-self: center;
+    align-self: end;
     display: flex;
     flex-direction: column;
     gap: 40px;
     
 }
 .icon{
-    width: 23px;
-    height: 23px;
+    width: 20px;
+    height: 20px;
     fill: var(--color-secondary);
     transition: all 0.2s ease;
 }
 .icon:hover{
     transform: translateY(-3px);
     fill: var(--color-accent);
+}
+.line{
+    height: 20vh;
+    align-self: center;
+    border-right: 1px solid var(--color-secondary);
 }

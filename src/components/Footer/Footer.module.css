@@ -1,0 +1,30 @@
+.footer{
+    margin: auto;
+    max-width: 240px;
+}
+.iconList{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.iconListItem > svg{
+    fill: var(--color-secondary);
+    width: 20px;
+    height: 20px;
+}
+.copyright{
+    margin: 2rem 0;
+    text-align: center;
+    font-family: JetBrains;
+    font-size: 1.3rem;
+    color: var(--color-secondary);
+}
+
+@media screen  and (min-width: 768px) {
+    .iconList{
+        display: none;
+    }
+    .copyright{
+        margin: 2rem 0 1rem;   
+    }
+}

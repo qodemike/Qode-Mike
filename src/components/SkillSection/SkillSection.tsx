@@ -1,5 +1,4 @@
-import NumberedHeading from "../NumberedHeading";
-import styles from "./Skills.module.css";
+import styles from "./SkillSection.module.css";
 import BulletPoint from "../../assets/bullet point.png";
 
 const Skills = () => {

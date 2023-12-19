@@ -3,23 +3,27 @@ import NavBar from "../components/NavBar";
 import styles from './Layout.module.css';
 import { SideBarRight } from "../components/SideBarRight";
 import SideBarLeft from "../components/SideBarLeft";
+import Footer from "../components/Footer";
 
 const Layout = () => {
   return (
     <>
       <div className={styles.grid}>
-        <div className={styles.nav}>
+        <header className={styles.nav}>
           <NavBar />
-        </div>
-        <div className={styles.left}>
+        </header>
+        <aside className={styles.left}>
           <SideBarLeft />
-        </div>
-        <div className={styles.right}>
+        </aside>
+        <aside className={styles.right}>
           <SideBarRight />
-        </div>
+        </aside>
         <main className={styles.main}>
             <Outlet/>
         </main>
+        <footer className={styles.footer}>
+          <Footer/>
+        </footer>
     </div>
     </>
   );

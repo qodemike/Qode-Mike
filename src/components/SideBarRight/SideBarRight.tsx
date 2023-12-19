@@ -1,5 +1,5 @@
 import styles from "./SideBarRight.module.css";
-import Socials from "../../assets/sprite-socials.svg";
+import Sprite from "../../assets/sprite.svg";
 
 export const SideBarRight = () => {
   return (
@@ -7,9 +7,10 @@ export const SideBarRight = () => {
       <div className={styles.box}>
         <a className={styles.email} href="">
           <svg>
-            <use xlinkHref={`${Socials}#gmail`} />
+            <use xlinkHref={`${Sprite}#email`} />
           </svg>
         </a>
+        <div className={styles.line}></div>
       </div>
     </>
   );
