@@ -7,6 +7,11 @@
     margin-top: 1rem;
     width: 100%;
     border-bottom: 1px solid rgba(255,255,255,0.18);
+    transform-origin:0 0 ;
+}
+.line{
+    animation-name: grow;
+    animation-duration: 2s;
 }
 .subHeading{
     margin: 3rem 0 3rem 0;
@@ -42,5 +47,14 @@
     .iconList{
         justify-content: start;
         margin-left: 4rem;
+    }
+}
+
+@keyframes grow {
+    0%{
+        transform: scaleX(0);
+    }
+    100%{
+        transform: scaleX(1);
     }
 }

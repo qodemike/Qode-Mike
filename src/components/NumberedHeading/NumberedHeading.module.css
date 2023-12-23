@@ -20,17 +20,9 @@
     margin-left: 2rem;
     border-bottom: 1px solid var(--color-line);
     transform-origin: 0 0;
+    transform: scaleX(0);
+    transition: transform 2s ease;
 }
 .line.action{
-    animation-name: grow;
-    animation-duration: 1s;
-}
-
-@keyframes grow {
-    0%{
-        transform: scaleX(0);
-    }
-    100%{
-        transform: scaleX(1);
-    }
+    transform: scaleX(1);
 }

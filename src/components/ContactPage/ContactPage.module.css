@@ -20,7 +20,7 @@
 .banner{
     max-width: 280px;
     fill:#181d2c;
-    transition: all 0.2s ease;
+    transition: all 0.4s ease;
 }
 .banner.glow{
     fill: var(--color-accent);

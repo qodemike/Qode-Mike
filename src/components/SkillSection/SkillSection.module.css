@@ -18,7 +18,14 @@
     width: 100%;
     margin-left: 2rem ;
     border-bottom:1px solid rgba(255,255, 255, 0.18);
+    transform-origin: 0 0;
+    transform: scaleX(0);
+    transition: transform 2s ease;
 }
+.line.action{
+  transform: scaleX(1);
+}
+
 .service {
   margin-bottom: 1.8rem;
   display: flex;
