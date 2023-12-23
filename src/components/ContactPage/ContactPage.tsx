@@ -5,7 +5,13 @@ import sprite from '../../assets/sprite.svg';
 import { useEffect, useState } from "react";
 
 const ContactPage = () => {
+
   const [isAtEnd, setIsAtEnd] = useState(false);
+
+  const email = 'qodemike@gmail.com';
+  const subject = 'Initiate QodeMike';
+
+  
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,7 +30,7 @@ const ContactPage = () => {
   
   return (
     <>
-      <section className={styles.contactPage}>
+      <section id="ContactPage" className={styles.contactPage}>
         <header className={styles.header}>
           <NumberedHeading number="04." title="Intiate Qode Mike" />
         </header>
@@ -35,7 +41,7 @@ const ContactPage = () => {
           <p className={styles.text}>
             <span>Got something in mind?</span>{" "}Let's bring it to life
           </p>
-          <Button>Get In Touch</Button>
+          <a href={`mailto:${encodeURIComponent(email)}?subject=${encodeURIComponent(subject)}`}><Button>Get In Touch</Button></a>
         </article>
       </section>
     </>

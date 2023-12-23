@@ -20,15 +20,15 @@ const Technologies = () => {
     "MongoDB",
   ];
   return (
-    <section className={styles.technologies}>
+    <section id="Technologies" className={styles.technologies}>
       <header>
         <NumberedHeading number="02." title="My Arsenal" />
       </header>
       <article className={styles.content}>
         <p className={styles.text}>
-          A Brief visual of my programming languages, frameworks and libraries
-          that are commonly sought. Click <span>See Full List</span> for full
-          detail of my arsenal
+          A Brief visual of my languages, frameworks and libraries
+          that are commonly sought. Click <span>See Full List</span> for the full
+          inventory in detail.
         </p>
         <ul className={styles.iconList}>
           {languages.map((language, index) => (

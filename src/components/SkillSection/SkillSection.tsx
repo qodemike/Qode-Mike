@@ -4,13 +4,13 @@ import BulletPoint from "../../assets/bullet point.png";
 const Skills = () => {
   const services = [
     "Front-end and Back-end development.",
-    "Web design.",
-    "Web application development.",
-    "e-commerce web applications.",
+    "Development of scalable e-commerce web applications.",
+    "Construction of responsive web applications.",
     "Database design, modeling and management.",
-    "SEO Implementation.",
-    "Site Optimization",
     "Unit and Integration testing.",
+    "Search Engine Optimization.",
+    "Web design.",
+    "Site testing and optimization",
     "Consultation",
   ];
 

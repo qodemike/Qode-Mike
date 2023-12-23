@@ -34,7 +34,7 @@ const Portfolio = () => {
 
   return (
     <>
-      <section className={styles.myPortfolio}>
+      <section id="MyPortfolio" className={styles.myPortfolio}>
         <header>
           <NumberedHeading number="03." title="My Portfolio" />
         </header>

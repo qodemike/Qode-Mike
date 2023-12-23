@@ -2,7 +2,7 @@
   height: calc(97vh - 71px);
   display: flex;
   align-items: center;
-  margin-bottom: 20rem;
+  padding-bottom: 13rem;
 }
 .salutations {
   color: var(--color-accent);

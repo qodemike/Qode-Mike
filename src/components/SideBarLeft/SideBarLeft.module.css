@@ -3,8 +3,7 @@
     align-self: end;
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    
+    gap: 30px;
 }
 .icon{
     width: 20px;

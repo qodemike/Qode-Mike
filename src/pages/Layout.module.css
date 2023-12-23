@@ -1,66 +1,69 @@
 /* Grid Layout */
 .grid {
-    display: grid;
-  
-    grid-template-rows: 71px 1fr;
-    grid-template-columns: 1fr;
-    
+  display: grid;
+
+  grid-template-rows: 71px 1fr;
+  grid-template-columns: 1fr;
+
+  grid-template-areas:
+    " nav "
+    " main "
+    "footer";
+}
+
+/* Navigation */
+.nav {
+  grid-area: nav;
+}
+
+/* Side Bar Left */
+.left {
+  height: calc(100vh - 71px);
+  grid-area: left;
+  display: none;
+}
+
+/* Side Bar Right */
+.right {
+  height: calc(100vh - 71px);
+  grid-area: right;
+  display: none;
+}
+
+/* Main */
+.main {
+  grid-area: main;
+  padding: 0 10%;
+}
+
+/* Footer */
+.footer {
+  grid-area: footer;
+}
+
+
+@media screen and (min-width: 769px) {
+  .grid {
+    grid-template-columns: 100px 1fr 100px;
     grid-template-areas:
-      " nav "
-      " main "
-      "footer";
+      " nav nav nav"
+      " left main right"
+      "footer footer footer";
   }
-  @media screen and (min-width: 769px) {
-    .grid {
-      grid-template-columns: 100px 1fr 100px;
-  
-      grid-template-areas:
-        " nav nav nav"
-        " left main right"
-        "left footer right";
-    }
-  }
-  
-  /* Navigation */
-  .nav {
-    grid-area: nav;
-  }
-  
-  /* Side Bar Left */
   .left {
-    height: calc(100vh - 71px);
-    grid-area: left;
-    display: none;
+    display: flex;
+    justify-content: center;
   }
-  @media screen and (min-width: 769px) {
-    .left {
-      display: flex;
-      justify-content: center;
-    }
-  }
-  
-  /* Side Bar Right */
   .right {
-    height: calc(100vh - 71px);
-    grid-area: right;
-    display: none;
-  }
-  @media screen and (min-width: 769px) {
-    .right {
-      display: flex;
-      flex-direction: column;
-      justify-content: end;
-      align-items: center ;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
   }
   
-  /* Main */
-  .main{
-   grid-area: main;
-   padding: 0 10%;
-  }
-  
-  /* Footer */
-  .footer{
-    grid-area: footer;
-  }
+}
+@media screen and (min-width: 1024px) {
+  .grid {
+    grid-template-columns: 120px 1fr 120px;
+  } 
+}

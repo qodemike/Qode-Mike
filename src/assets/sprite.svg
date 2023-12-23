@@ -6,9 +6,9 @@
   </symbol>
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 18" id="hamburger-menu-icon">
     <g id="Group_78" transform="translate(-294.5 -20.5)">
-      <line id="Line_38" x2="37" transform="translate(294.5 21.5)" fill="none" stroke="#1bfef4" stroke-width="2"></line>
-      <line id="Line_39" x2="37" transform="translate(294.5 29.5)" fill="none" stroke="#1bfef4" stroke-width="2"></line>
-      <line id="Line_40" x2="37" transform="translate(294.5 37.5)" fill="none" stroke="#1bfef4" stroke-width="2"></line>
+      <line id="Line_38" x2="37" transform="translate(294.5 21.5)"  stroke-width="2"></line>
+      <line id="Line_39" x2="37" transform="translate(294.5 29.5)"  stroke-width="2"></line>
+      <line id="Line_40" x2="37" transform="translate(294.5 37.5)"  stroke-width="2"></line>
     </g>
   </symbol>
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43.426 29.51" id="Logo">

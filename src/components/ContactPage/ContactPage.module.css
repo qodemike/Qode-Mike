@@ -1,10 +1,9 @@
 .contactPage{
-    margin-bottom: 150px;
 }
 .header{
     margin: auto;
     max-width: 300px;
-    margin-bottom: 3rem;
+    margin-bottom: 2.4rem;
 }
 .contactDetails{
     display: flex;
@@ -12,13 +11,14 @@
     align-items: center;
 }
 .text{
-    margin: .6rem 0 4rem;
+    margin: 2rem 0 4rem;
     font-size: 1.4rem;
 }
 .text > span{
     color: var(--color-accent);
 }
 .banner{
+    max-width: 280px;
     fill:#181d2c;
     transition: all 0.2s ease;
 }

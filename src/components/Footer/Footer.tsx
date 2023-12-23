@@ -6,7 +6,7 @@ const Footer = () => {
     const socials = ["twitter", "github", "instagram", "linkedin-outline"];
   return (
     <>
-    <section  className={styles.footer}>
+    <div className={styles.footer}>
         <ul className={styles.iconList}>
             {socials.map((s, index) => (
                 <li key={index} className={styles.iconListItem}>
@@ -17,10 +17,10 @@ const Footer = () => {
             )
             )}
         </ul>
-        <p className={styles.copyright} >Copyright @ 2022 QodeMike</p>
-    </section>
+        <p className={styles.copyright} >Copyright @ 2022 Qode Mike</p>
+    </div>
     </>
   )
 }
 
-export default Footer
+export default Footer;
