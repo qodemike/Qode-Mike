@@ -1,6 +1,5 @@
 import styles from "./ProjectDisplay.module.css";
 import LanguageIcons from "../../assets/sprite-languages.svg";
-import { useAOS } from "../../hooks/useAOS";
 
 export interface Project {
   title: string;
@@ -17,7 +16,6 @@ interface Props {
 }
 
 const ProjectDisplay = ({ projects }: Props) => {
-  useAOS();
 
   return (
     <>

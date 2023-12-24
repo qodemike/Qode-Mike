@@ -3,11 +3,8 @@ import styles from "./Technologies.module.css";
 import icons from "../../assets/sprite-languages.svg";
 import Button from "../Button";
 import { Link } from "react-router-dom";
-import { useAOS } from "../../hooks/useAOS";
 
 const Technologies = () => {
-  useAOS();
-
   const languages = [
     "HTML",
     "CSS",
@@ -22,6 +19,8 @@ const Technologies = () => {
     "Wordpress",
     "MongoDB",
   ];
+
+
   return (
     <section id="Technologies" className={styles.technologies}>
       <header>

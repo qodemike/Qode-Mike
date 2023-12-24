@@ -2,8 +2,6 @@ import styles from "./SkillSection.module.css";
 import BulletPoint from "../../assets/bullet point.png";
 import { useEffect, useRef } from "react";
 import { useIntersectionObserver } from "../../hooks/useIntersectionObserver";
-import AOS from 'aos';
-import { useAOS } from "../../hooks/useAOS";
 
 
 const Skills = () => {
@@ -19,7 +17,6 @@ const Skills = () => {
     "Consultation",
   ];
 
-  useAOS();
   const lineRef = useRef<HTMLDivElement>(null);
 
   useEffect( () => {

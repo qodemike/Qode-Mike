@@ -3,10 +3,8 @@ import styles from "./AboutMe.module.css";
 import PassportImg from "../../assets/me.jpg";
 import { useEffect, useRef, useState } from "react";
 import BulletPoint from "../../assets/bullet point.png";
-import { useAOS } from "../../hooks/useAOS";
 
 const AboutMe = () => {
-  useAOS();
 
   return (
     <>

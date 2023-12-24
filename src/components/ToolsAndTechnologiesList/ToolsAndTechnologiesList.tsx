@@ -1,8 +1,5 @@
 import styles from "./ToolsAndTechnologiesList.module.css";
 import languageIcons from "../../assets/sprite-languages.svg";
-import { useAOS } from "../../hooks/useAOS";
-import { useIntersectionObserver } from "../../hooks/useIntersectionObserver";
-import { useEffect, useRef } from "react";
 
 const ToolsAndTechnologiesList = () => {
   const technologies = {
@@ -19,7 +16,6 @@ const ToolsAndTechnologiesList = () => {
     "Design Tools": ["Adobe XD", "Illustrator", "Photoshop"],
   };
 
-  useAOS();
 
 
   return (
@@ -28,13 +24,12 @@ const ToolsAndTechnologiesList = () => {
         My Tools and Technologies
       </h2>
       <div  className={`${styles.line}`} ></div>
-      <div data-aos="fade-right" data-aos-duration="1000"  >
-      {Object.entries(technologies).map((stack) => (
-        <div >
+      {Object.entries(technologies).map((stack , stackIndex) => (
+        <div key={stackIndex} >
           <h3 className={styles.subHeading}>{stack[0]}</h3>
           <ul className={styles.iconList}>
-            {stack[1].map((language, index) => (
-              <li data-aos="fade-right" data-aos-delay={100*index} className={styles.iconListItem}>
+            {stack[1].map((language, languageIndex) => (
+              <li data-aos="fade-right" data-aos-delay={100*languageIndex} className={styles.iconListItem}>
                 <svg>
                   <use xlinkHref={`${languageIcons}#${language}`} />
                 </svg>
@@ -44,7 +39,6 @@ const ToolsAndTechnologiesList = () => {
           </ul>
         </div>
       ))}
-      </div>
     </>
   );
 };

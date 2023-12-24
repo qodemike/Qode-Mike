@@ -3,7 +3,8 @@ import Button from "../Button";
 import Bullet from "../../assets/Bullet Point.png";
 import MenuIcon from "../../assets/hamburger-menu-icon.svg";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
+import {Link as ScrollLink, scroller} from 'react-scroll';
 import sprite from "../../assets/sprite.svg";
 import Logo from "../../assets/Logo.svg";
 
@@ -11,6 +12,18 @@ const NavBar = () => {
   const [collapsed, setCollapsed] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
   const [isHidden, setIsHidden] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleNavigate = async (section: string) => {
+
+    await navigate('/');
+
+    scroller.scrollTo(section,{
+      smooth: true,
+      duration:500
+    })
+  }
 
   const resizeOnDeviceChange = () => {
     if (window.innerWidth > 768) {
@@ -71,19 +84,19 @@ const NavBar = () => {
           >
             <li className={styles.navListItem}>
               <img src={Bullet} />
-              <a className={styles.anchor} href="#AboutMe">
+              <a onClick={() => handleNavigate("AboutMe")} className={styles.anchor}>
                 About Me
               </a>
             </li>
             <li className={styles.navListItem}>
               <img src={Bullet} />
-              <a className={styles.anchor} href="#Technologies">
+              <a onClick={() => handleNavigate("Technologies")} className={styles.anchor} >
                 Tools and Technologies
               </a>
             </li>
             <li className={styles.navListItem}>
               <img src={Bullet} />
-              <a className={styles.anchor} href="#MyPortfolio">
+              <a onClick={() => handleNavigate("MyPortfolio")} className={styles.anchor}>
                 Portfolio
               </a>
             </li>
