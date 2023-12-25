@@ -3,17 +3,15 @@ import Button from "../Button";
 import Bullet from "../../assets/Bullet Point.png";
 import MenuIcon from "../../assets/hamburger-menu-icon.svg";
 import { useEffect, useState } from "react";
-import { Link, useNavigate, useLocation } from "react-router-dom";
-import {Link as ScrollLink, scroller} from 'react-scroll';
+import { Link, useNavigate } from "react-router-dom";
+import {scroller} from 'react-scroll';
 import sprite from "../../assets/sprite.svg";
-import Logo from "../../assets/Logo.svg";
 
 const NavBar = () => {
   const [collapsed, setCollapsed] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
   const [isHidden, setIsHidden] = useState(false);
   const navigate = useNavigate();
-  const location = useLocation();
 
   const handleNavigate = async (section: string) => {
 
@@ -66,7 +64,7 @@ const NavBar = () => {
   return (
     <>
       <div
-        className={`${styles.header} ${isHidden? `${styles.hide}`: ""}  ${isVisible ? `${styles.visible}` : ""} ${collapsed ? `${styles.collapsed}` : ""}`}
+        className={`${styles.header} ${isHidden? `${styles.moveUp}`: ""}  ${isVisible ? `${styles.visible}` : ""} ${collapsed ? `${styles.collapsed}` : ""}`}
       >
         <nav className={styles.nav}>
           <div className={styles.logoWrapper}>
@@ -100,7 +98,8 @@ const NavBar = () => {
                 Portfolio
               </a>
             </li>
-            <a href="#ContactPage">
+            <a onClick={() => handleNavigate("ContactPage")}>
+
               <Button style={{ padding: "var(--padding-small)" }}>
                 Say Hello
               </Button>

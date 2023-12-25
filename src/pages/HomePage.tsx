@@ -13,7 +13,7 @@ const HomePage = () => {
         <SkillSection />
         <Technologies />
         <Portfolio />
-        <ContactPage />
+        <ContactPage/>
     </>
   );
 };

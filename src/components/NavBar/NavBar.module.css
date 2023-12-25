@@ -8,18 +8,17 @@
   justify-content: space-between;
   transition: all 0.3s ease;
   overflow: hidden;
-  backdrop-filter: blur(50px);
-  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 .header.visible{
   height: 71px;
   background: rgba(53, 53, 53, 0.07);
 }
 
-.header.hide{
+.header.moveUp{
   transform: translateY(-71px);
 }
-
 .logoWrapper{
   align-self: center;
 }

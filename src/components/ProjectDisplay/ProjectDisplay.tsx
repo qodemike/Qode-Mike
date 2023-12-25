@@ -37,11 +37,12 @@ const ProjectDisplay = ({ projects }: Props) => {
             </picture>
           </div>
           <div className={styles.projectDetails}>
-            <a data-aos="fade-left" href={p.href}>
+            <a 
+            href={p.href}>
               <h3>{p.title}</h3>
             </a>
             <div
-              data-aos="fade-left"
+              data-aos="fade-right"
               data-aos-delay="300"
               className={styles.descriptionCard}
             >
@@ -52,7 +53,7 @@ const ProjectDisplay = ({ projects }: Props) => {
                 const delay = 100 * languageIndex;
                 return (
                   <li
-                    data-aos="fade-left"
+                    data-aos="fade-right"
                     data-aos-delay={`${delay}`}
                     data-aos-offset="40"
                     key={languageIndex}

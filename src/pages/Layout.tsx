@@ -4,10 +4,12 @@ import styles from './Layout.module.css';
 import { SideBarRight } from "../components/SideBarRight";
 import SideBarLeft from "../components/SideBarLeft";
 import Footer from "../components/Footer";
+import LoadingScreen from "../components/LoadingScreen/LoadingScreen";
 
 const Layout = () => {
   return (
     <>
+    <LoadingScreen/>
       <div className={styles.grid}>
         <header className={styles.nav}>
           <NavBar />

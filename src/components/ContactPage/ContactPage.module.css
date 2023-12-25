@@ -19,7 +19,7 @@
 }
 .banner{
     max-width: 280px;
-    fill:#181d2c;
+    fill: var(--color-lights-out);
     transition: all 0.4s ease;
 }
 .banner.glow{

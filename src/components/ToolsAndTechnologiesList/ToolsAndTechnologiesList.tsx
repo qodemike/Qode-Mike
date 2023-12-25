@@ -16,20 +16,18 @@ const ToolsAndTechnologiesList = () => {
     "Design Tools": ["Adobe XD", "Illustrator", "Photoshop"],
   };
 
-
-
   return (
     <>
       <h2  className={styles.heading}>
         My Tools and Technologies
       </h2>
       <div  className={`${styles.line}`} ></div>
-      {Object.entries(technologies).map((stack , stackIndex) => (
+      {Object.entries(technologies).map((stack, stackIndex) => (
         <div key={stackIndex} >
           <h3 className={styles.subHeading}>{stack[0]}</h3>
           <ul className={styles.iconList}>
             {stack[1].map((language, languageIndex) => (
-              <li data-aos="fade-right" data-aos-delay={100*languageIndex} className={styles.iconListItem}>
+              <li key={languageIndex} data-aos="fade-right" data-aos-delay={100*languageIndex} className={styles.iconListItem}>
                 <svg>
                   <use xlinkHref={`${languageIcons}#${language}`} />
                 </svg>

@@ -1,7 +1,6 @@
 import NumberedHeading from "../NumberedHeading";
 import styles from "./AboutMe.module.css";
 import PassportImg from "../../assets/me.jpg";
-import { useEffect, useRef, useState } from "react";
 import BulletPoint from "../../assets/bullet point.png";
 
 const AboutMe = () => {
