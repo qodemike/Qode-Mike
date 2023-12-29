@@ -25,7 +25,7 @@ const Portfolio = () => {
         cropped: CloudyCropped
       },
       title: "Cloud Hosting",
-      href: '#',
+      href: 'https://cloudily.netlify.app',
       description:
         "A website for purchasing domains and hosting. Implemented with a focus on Speed, Search Engine Optimization, responsiveness and various optimization techniques.",
       languages: ["HTML", "CSS", "Javascript"],

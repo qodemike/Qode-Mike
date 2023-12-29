@@ -17,6 +17,11 @@ interface Props {
 
 const ProjectDisplay = ({ projects }: Props) => {
 
+  const handleClick = (url: string) => {
+    window.open(url, '_blank');
+  }
+  
+
   return (
     <>
       {projects.map((p, projectIndex) => (
@@ -25,22 +30,21 @@ const ProjectDisplay = ({ projects }: Props) => {
             data-aos="fade-up"
             data-aos-duration="1500"
             data-aos-offset="0"
+            onClick={() => handleClick(p.href)}
             className={styles.imgContainer}
           >
-            <picture>
+            <picture >
               <source media="(max-width: 500px)" srcSet={p.source.cropped} />
               <img
                 className={styles.projectImg}
                 src={p.source.default}
                 alt="image of the project"
-              />
+                />
             </picture>
           </div>
+
           <div className={styles.projectDetails}>
-            <a 
-            href={p.href}>
-              <h3>{p.title}</h3>
-            </a>
+              <h3  onClick={() => handleClick(p.href)} className={styles.projectTitle}>{p.title}</h3>
             <div
               data-aos="fade-right"
               data-aos-delay="300"

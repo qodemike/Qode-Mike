@@ -1,6 +1,6 @@
 import NumberedHeading from "../NumberedHeading";
 import styles from "./AboutMe.module.css";
-import PassportImg from "../../assets/me.jpg";
+import PassportImg from "../../assets/profile_image.webp";
 import BulletPoint from "../../assets/bullet point.png";
 
 const AboutMe = () => {
@@ -15,7 +15,7 @@ const AboutMe = () => {
           <div>
             <p data-aos="fade-right" className={styles.paragraph}>
               Hi, I'm Michael, a passion-driven full-stack web developer. This
-              fascination <span>dates back to 2019</span> where I wanted to
+              fascination <span>dates back to 2018</span> where I wanted to
               automate my derivatives trading strategy using Python.
             </p>
             <p
@@ -55,9 +55,9 @@ const AboutMe = () => {
             >
               <img src={BulletPoint} alt="" />
               <div className={styles.workExperienceDetails}>
-                <span className={styles.role}>Junior Developer</span>
+                <span className={styles.role}>Software Developer</span>
                 <span className={styles.company}> @ Canaan Developers</span>
-                <span className={styles.duration}>Jan 2021 - May 2022</span>
+                <span className={styles.duration}>Jan 2021 - Sep 2022</span>
               </div>
             </div>
           </div>

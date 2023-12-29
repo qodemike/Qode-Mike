@@ -20,7 +20,7 @@ body {
 }
 
 .spin {
-  animation: spin 0.7s linear infinite;
+  animation: spin 0.5s linear infinite;
 }
 
 .spinSlowdown {

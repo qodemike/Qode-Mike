@@ -1,9 +1,6 @@
 .aboutMe {
   transition: transform 1s ease-in;
 }
-.aboutMe.move{
-    /* transform: translate3d(0, -617px, 0); */
-}
 
 /* Article  */
 .content {

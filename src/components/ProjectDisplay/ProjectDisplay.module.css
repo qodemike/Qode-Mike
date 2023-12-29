@@ -9,6 +9,7 @@
 .projectImg {
   object-fit: cover;
   width: 100%;
+  cursor: pointer;
 }
 .imgContainer {
   width: fit-content;
@@ -17,7 +18,7 @@
   overflow: hidden;
   border-radius: 5px;
   box-shadow: 5px 12px 10px #03030d;
-
+  cursor: pointer;
 }
 /* Image Curtain */
 .imgContainer > picture::before {
@@ -49,6 +50,10 @@
 }
 
 /* Detail Section */
+.projectTitle{
+  cursor: pointer;
+}
+
 .projectDetails {
   z-index: 2;
   width: 40%;
