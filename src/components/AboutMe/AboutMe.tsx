@@ -4,7 +4,6 @@ import PassportImg from "../../assets/profile_image.webp";
 import BulletPoint from "../../assets/bullet point.png";
 
 const AboutMe = () => {
-
   return (
     <>
       <section id="AboutMe" className={`${styles.aboutMe} ${styles.move}`}>
@@ -14,29 +13,29 @@ const AboutMe = () => {
         <article className={styles.content}>
           <div>
             <p data-aos="fade-right" className={styles.paragraph}>
-              Hi, I'm Michael, a passion-driven full-stack web developer. This
-              fascination <span>dates back to 2018</span> where I wanted to
-              automate my derivatives trading strategy using Python.
+              Hi, I'm Michael, a passion-driven full-stack web developer. My
+              programming fascination <span> dates back to 2018 </span> where I
+              wanted to automate my derivatives trading strategy using Python.
             </p>
             <p
               data-aos="fade-right"
               data-aos-delay="100"
               className={styles.paragraph}
             >
-              Fast-forward to today, I've been helping all sorts of clients
-              stand out in the immense digital landscape by{" "}
-              <span>Designing</span>, <span>Developing</span>,{" "}
-              <span>Deploying</span> and <span>Managing</span> their needs.
+              Fast-forward to today, I've helped many clients stand out in the
+              immense digital landscape by <span>Designing</span>,{" "}
+              <span>Developing</span>, <span>Deploying</span> and{" "}
+              <span>Manage</span> their digital needs.
             </p>
             <p
               data-aos="fade-right"
               data-aos-delay="200"
               className={styles.paragraph}
             >
-              Most of the time, I build <span> scalable web solutions </span>{" "}
-              for clients joining the e-commerce industry, and{" "}
-              <span> fast accessible web applications </span> with{" "}
-              <span> production grade APIs</span>.
+              Most of the time, I've built{" "}
+              <span> fast , accessible web applications </span> with{" "}
+              <span>production grade APIs</span> and scalable web solutions for
+              clients joining the <span> e-commerce industry </span>.
             </p>
             <p
               data-aos="fade-right"

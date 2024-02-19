@@ -32,6 +32,7 @@
 
 /* Main */
 .main {
+  max-width: 1440px;
   grid-area: main;
   padding: 0 10%;
 }
@@ -40,7 +41,6 @@
 .footer {
   grid-area: footer;
 }
-
 
 @media screen and (min-width: 769px) {
   .grid {

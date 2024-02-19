@@ -1,6 +1,4 @@
-body {
-  overflow: hidden;
-}
+
 .loadScreen {
   width: 100vw;
   height: 100vh;
@@ -15,35 +13,8 @@ body {
   transition: all 1s ease;
 }
 .logo {
-  width: 60px;
-  fill: var(--color-accent);
+  width: 80px;
 }
-
-.spin {
-  animation: spin 0.5s linear infinite;
-}
-
-.spinSlowdown {
-  animation: spin-slowdown 1s ease-out;
-}
-
 .moveUp {
   transform: translateY(-100%);
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes spin-slowdown {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }

@@ -32,7 +32,7 @@
   z-index: 2;
   transform: scale(1);
   transform-origin: 0 0;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 
 .imgContainer > picture::after {
@@ -46,7 +46,7 @@
   z-index: 1;
   transform: scaleX(1);
   transform-origin: 0 0;
-  transition: all 0.3s ease;
+  transition: all 1s ease;
 }
 
 /* Detail Section */
@@ -74,7 +74,7 @@
 .projectDetails p {
   text-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
   font-size: 1.5rem;
-  text-align: right;
+  text-align: left;
   color: var(--color-body);
 }
 .iconList {
@@ -106,10 +106,10 @@
     mix-blend-mode: multiply;
   }
   .imgContainer > picture:hover::before {
-    transform: scaleX(0);
+    opacity: 0;
   }
   .imgContainer > picture:hover::after {
-    transform: scaleX(0);
+    opacity: 0;
   }
   
 }

@@ -1,46 +1,19 @@
 import styles from "./LoadingScreen.module.css";
 import { useEffect, useRef, useState } from "react";
-import Logo from "../../assets/sprite.svg";
+import logo from "../../assets/Logo.svg";
 
 const LoadingScreen = () => {
   const [isLoading, setIsLoading] = useState(true);
-    const logoRef = useRef<SVGSVGElement>(null);
 
   useEffect(() => {
+    const timeout = setTimeout(() => setIsLoading(false), 1000);
 
-    const animate = () => {
-        return new Promise( (resolve) => {
-            setTimeout( () => {
-                if (logoRef.current){
-                    logoRef.current.classList.remove(styles.spin);
-                    logoRef.current.classList.add(styles.spinSlowdown);
-                    // Wait alittle for the animation to finish
-                    setTimeout(() => {
-                        resolve(null);
-                    }, 1500)
-                }
-            }, 1000)
-        })
-    }
-
-    const removeLoadingScreen = async() =>{
-        await animate();
-        setIsLoading(false);
-        document.body.style.overflow = 'scroll';   
-    }
-
-    removeLoadingScreen();
-  },[])
-
-
+    return () => clearTimeout(timeout);
+  }, []);
 
   return (
-    <div
-      className={`${styles.loadScreen} ${isLoading ? "" : `${styles.moveUp}`}`}
-    >
-      <svg ref={logoRef}  className={`${styles.logo} ${isLoading ? styles.spin : "" }`}  >
-        <use xlinkHref={`${Logo}#Logo`}></use>
-      </svg>
+    <div className={`${styles.loadScreen} ${ isLoading ? "" : styles.moveUp }`}>
+      <img src={logo} alt="" className={`${styles.logo}`} />
     </div>
   );
 };

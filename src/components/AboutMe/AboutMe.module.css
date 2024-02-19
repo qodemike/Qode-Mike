@@ -46,14 +46,14 @@
   left: 0;
   backdrop-filter: grayscale(100%) contrast(1.1);
   mix-blend-mode: multiply;
-  transition: all 0.3s ease;
+  transition: all 0.8s ease;
 }
 
 .profileImg {
     object-fit: cover;
     width: 100%;
     min-width: 200px;
-    max-width: 300px;
+    max-width: 250px;
 }
 
 /* Work Experience */
@@ -87,10 +87,10 @@
   color: var(--color-secondary);
 }
 .imgContainer > picture:hover::before{
-  transform: scaleX(0);
+  opacity: 0;
 }
 .imgContainer > picture:hover::after{
-  transform: scaleX(0);
+  opacity:0;
 }
 
 @media screen and (min-width: 1024px) {

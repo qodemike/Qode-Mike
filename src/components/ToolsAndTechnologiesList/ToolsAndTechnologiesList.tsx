@@ -1,20 +1,8 @@
 import styles from "./ToolsAndTechnologiesList.module.css";
 import languageIcons from "../../assets/sprite-languages.svg";
+import { technologies } from "../../data/technologies";
 
 const ToolsAndTechnologiesList = () => {
-  const technologies = {
-    Langauges: ["HTML", "CSS", "Javascript", "Typescript", "SQL", "Python"],
-    "Front-end Technologies": [
-      "React JS",
-      "Wordpress",
-      "Bootstrap",
-      "Material UI",
-      "Chakra UI",
-    ],
-    "Back-end Technologies": ["Node JS", "Express JS", "PHP"],
-    Database: ["MongoDB", "My SQL"],
-    "Design Tools": ["Adobe XD", "Illustrator", "Photoshop"],
-  };
 
   return (
     <>
@@ -27,7 +15,7 @@ const ToolsAndTechnologiesList = () => {
           <h3 className={styles.subHeading}>{stack[0]}</h3>
           <ul className={styles.iconList}>
             {stack[1].map((language, languageIndex) => (
-              <li key={languageIndex} data-aos="fade-right" data-aos-delay={100*languageIndex} className={styles.iconListItem}>
+              <li key={languageIndex}  className={styles.iconListItem}>
                 <svg>
                   <use xlinkHref={`${languageIcons}#${language}`} />
                 </svg>

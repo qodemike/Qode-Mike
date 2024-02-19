@@ -1,4 +1,4 @@
-import styles from "./ProjectDisplay.module.css";
+import styles from "./ProjectDisplaySection.module.css";
 import LanguageIcons from "../../assets/sprite-languages.svg";
 
 export interface Project {
@@ -15,7 +15,7 @@ interface Props {
   projects: Project[];
 }
 
-const ProjectDisplay = ({ projects }: Props) => {
+const ProjectDisplaySection = ({ projects }: Props) => {
 
   const handleClick = (url: string) => {
     window.open(url, '_blank');
@@ -77,4 +77,4 @@ const ProjectDisplay = ({ projects }: Props) => {
   );
 };
 
-export default ProjectDisplay;
+export default ProjectDisplaySection;

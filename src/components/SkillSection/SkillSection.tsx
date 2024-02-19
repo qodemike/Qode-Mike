@@ -7,13 +7,13 @@ import { useIntersectionObserver } from "../../hooks/useIntersectionObserver";
 const Skills = () => {
   const services = [
     "Front-end and Back-end development.",
-    "Development of scalable e-commerce web applications.",
+    "Scalable e-commerce web applications.",
     "Construction of responsive web applications.",
     "Database design, modeling and management.",
-    "Unit and Integration testing.",
+    "Unit, Integration and End to End testing.",
     "Search Engine Optimization.",
     "Web design.",
-    "Site testing and optimization",
+    "Performance testing and optimization",
     "Consultation",
   ];
 
@@ -30,7 +30,7 @@ const Skills = () => {
     <>
       <section className={styles.skillsAndServices}>
         <header className={styles.header}>
-          <h2>My Skills and Services</h2>
+          <h2>Things I can Do</h2>
           <div ref={lineRef} className={styles.line}></div>
         </header>
         <article>

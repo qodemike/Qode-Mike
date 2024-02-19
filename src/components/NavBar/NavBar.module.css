@@ -22,13 +22,9 @@
 .logoWrapper{
   align-self: center;
 }
-.Logo {
-  width: 40px;
-  height: 40px;
-  fill: var(--color-accent);
-}
-.Logo:hover{
-  fill: var(--color-accent-dark);
+.logo {
+  width: 36px;
+  height: 36px;
 }
 .anchor {
   color: var(--color-body);
@@ -58,6 +54,7 @@
   opacity: 0;
 }
 .navListItem {
+  width: fit-content;
   margin-right: 4rem;
   margin-bottom: 2.3rem;
 }
@@ -104,5 +101,11 @@
   }
   .collapsibleIcon {
     display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .logo{
+    width: 40px;
+
   }
 }

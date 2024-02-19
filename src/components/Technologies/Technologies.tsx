@@ -9,15 +9,16 @@ const Technologies = () => {
     "HTML",
     "CSS",
     "Javascript",
-    "Node JS",
-    "PHP",
     "Typescript",
+    "Node JS",
     "React JS",
+    "Next JS",
+    "Firebase",
+    "Tailwind",
     "Material UI",
-    "Bootstrap",
     "My SQL",
-    "Wordpress",
     "MongoDB",
+    "Wordpress",
   ];
 
 

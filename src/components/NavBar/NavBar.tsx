@@ -5,7 +5,7 @@ import MenuIcon from "../../assets/hamburger-menu-icon.svg";
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import {scroller} from 'react-scroll';
-import sprite from "../../assets/sprite.svg";
+import logo from "../../assets/Logo.svg";
 
 const NavBar = () => {
   const [collapsed, setCollapsed] = useState(false);
@@ -69,9 +69,7 @@ const NavBar = () => {
         <nav className={styles.nav}>
           <div className={styles.logoWrapper}>
             <Link to={"/"}>
-              <svg className={styles.Logo}>
-                <use xlinkHref={`${sprite}#Logo`}></use>
-              </svg>
+            <img src={logo} className={styles.logo}/>
             </Link>
           </div>
 
@@ -98,12 +96,14 @@ const NavBar = () => {
                 Portfolio
               </a>
             </li>
+            <li>
             <a onClick={() => handleNavigate("ContactPage")}>
 
               <Button style={{ padding: "var(--padding-small)" }}>
                 Say Hello
               </Button>
             </a>
+            </li>
           </ul>
           <button
             onClick={() => setCollapsed(!collapsed)}
