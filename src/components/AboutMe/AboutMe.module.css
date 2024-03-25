@@ -5,24 +5,24 @@
 /* Article  */
 .content {
   margin-top: 4rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: start;
   gap: 4rem;
 }
 
 .paragraph {
-  max-width: 51ch;
   margin-bottom: 1.6rem;
   font-size: 1.5rem;
 }
-.paragraph > span{
+.paragraph > span {
   color: var(--color-accent);
 }
 .imgContainer {
-    width: fit-content;
-    height: fit-content;
-    position: relative;
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  justify-self: center;
 }
 .imgContainer > picture::before {
   content: "";
@@ -50,54 +50,52 @@
 }
 
 .profileImg {
-    object-fit: cover;
-    width: 100%;
-    min-width: 200px;
-    max-width: 250px;
+  object-fit: cover;
+  width: 100%;
+  min-width: 200px;
+  max-width: 250px;
 }
 
 /* Work Experience */
-.workExperience{
+.workExperience {
   max-width: 380px;
   margin: auto;
   display: flex;
   font-size: 1.5rem;
 }
-.workExperience > img{
+.workExperience > img {
   margin-top: 0.7rem;
   align-self: start;
 }
-.workExperienceDetails{
+.workExperienceDetails {
   font-family: Inter;
   margin-left: 2rem;
 }
-.role{
+.role {
   color: var(--color-body);
   font-weight: bold;
 }
-.company{
+.company {
   color: var(--color-accent);
   font-weight: bold;
 }
-.duration{
+.duration {
   display: block;
-  margin: 1rem 0 ;
+  margin: 1rem 0;
   font-family: SFMono;
   font-size: 1.3rem;
   color: var(--color-secondary);
 }
-.imgContainer > picture:hover::before{
+.imgContainer > picture:hover::before {
   opacity: 0;
 }
-.imgContainer > picture:hover::after{
-  opacity:0;
+.imgContainer > picture:hover::after {
+  opacity: 0;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .content {
-    flex-direction: row;
-    justify-content: center;
-    align-items: start;
+    grid-template-columns: 1.7fr 1fr;
+    gap: 4rem;
   }
- 
 }

@@ -34,7 +34,7 @@
 .main {
   max-width: 1440px;
   grid-area: main;
-  padding: 0 10%;
+  padding: 0 7%;
 }
 
 /* Footer */
@@ -60,10 +60,16 @@
     justify-content: end;
     align-items: center;
   }
+  .main{
+    padding: 0 10%;
+  }
   
 }
 @media screen and (min-width: 1024px) {
   .grid {
     grid-template-columns: 120px 1fr 120px;
   } 
+  .main{
+    padding: 0 10%;
+  }
 }

@@ -2,7 +2,7 @@ import AboutMe from "../components/AboutMe";
 import Hero from "../components/Hero/Hero";
 import Portfolio from "../components/MyPortfolio";
 import SkillSection from "../components/SkillSection";
-import Technologies from "../components/Technologies";
+import MyArsenal from "../components/Arsenal";
 import ContactPage from "../components/ContactPage";
 
 const HomePage = () => {
@@ -11,7 +11,7 @@ const HomePage = () => {
         <Hero />
         <AboutMe />
         <SkillSection />
-        <Technologies />
+        <MyArsenal />
         <Portfolio />
         <ContactPage/>
     </>

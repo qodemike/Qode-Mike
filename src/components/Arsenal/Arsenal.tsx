@@ -1,10 +1,10 @@
 import NumberedHeading from "../NumberedHeading";
-import styles from "./Technologies.module.css";
+import styles from "./Arsenal.module.css";
 import icons from "../../assets/sprite-languages.svg";
 import Button from "../Button";
 import { Link } from "react-router-dom";
 
-const Technologies = () => {
+const MyArsenal = () => {
   const languages = [
     "HTML",
     "CSS",
@@ -53,4 +53,4 @@ const Technologies = () => {
   );
 };
 
-export default Technologies;
+export default MyArsenal;

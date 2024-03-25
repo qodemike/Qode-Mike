@@ -7,14 +7,13 @@ import { useIntersectionObserver } from "../../hooks/useIntersectionObserver";
 const Skills = () => {
   const services = [
     "Front-end and Back-end development.",
-    "Scalable e-commerce web applications.",
-    "Construction of responsive web applications.",
-    "Database design, modeling and management.",
-    "Unit, Integration and End to End testing.",
+    "Development of Industry standard APIs.",
+    "Highly scalable e-commerce web applications.",
+    "Database design, modeling and development.",
     "Search Engine Optimization.",
-    "Web design.",
-    "Performance testing and optimization",
-    "Consultation",
+    "Progressive Web Applications.",
+    "Unit test, Integration test and end-to-end testing.",
+    "Payment processing gateways.",
   ];
 
   const lineRef = useRef<HTMLDivElement>(null);
@@ -36,7 +35,7 @@ const Skills = () => {
         <article>
           <ul>
             {services.map((s, index) => {
-              return <li data-aos="fade-right" data-aos-offset="30" key={index} className={styles.service}>
+              return <li key={index} className={styles.service}>
                 <img src={BulletPoint} /> <p>{s}</p>
               </li>
             }

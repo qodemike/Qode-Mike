@@ -2,52 +2,58 @@
     margin-top: 3rem;
     font-size: clamp( 2.3rem, 5vw, 3.2rem);
     text-wrap: nowrap;
+    text-align: center;
 }
 .line{
     margin-top: 1rem;
     width: 100%;
     border-bottom: 1px solid rgba(255,255,255,0.18);
-    transform-origin:0 0 ;
+    transform-origin: 0 0;
 }
 .line{
     animation-name: grow;
     animation-duration: 2s;
 }
 .subHeading{
-    margin: 3rem 0 3rem 0;
+    margin: 3rem 0;
     text-wrap: nowrap;
 }
 
 .iconList{
     margin: 4rem 0 10rem;
-    max-width: 65rem;
     display: flex;
     justify-content: start;
     flex-wrap: wrap;
-    gap: 9rem;
+    gap: 5rem;
 }
 .iconListItem{
+    flex: 0 1 150px;
     display: flex;
     align-items: center;
 }
 .iconListItem > svg{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 .iconListItem > span{
     color: var(--color-body);
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     text-wrap: nowrap;
     margin-left: 2rem ;
 }
 @media screen and (min-width: 769px) {
     .subHeading{
-        margin: 3rem 0 3rem 2rem;
+        margin: 3rem 0;
     }
     .iconList{
         justify-content: start;
-        margin-left: 4rem;
+        margin-left: 0;
     }
+   
+}
+
+@media screen and (min-width: 1024px) {
+    
 }
 
 @keyframes grow {

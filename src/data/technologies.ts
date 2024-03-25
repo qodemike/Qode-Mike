@@ -1,5 +1,5 @@
 export const technologies = {
-    Langauges: ["HTML", "CSS", "Javascript", "Typescript", "SQL", "Python"],
+    Languages: ["HTML", "CSS", "Javascript", "Typescript", "SQL", "Python"],
     "Front-end Technologies": [
       "React JS",
       "Wordpress",
