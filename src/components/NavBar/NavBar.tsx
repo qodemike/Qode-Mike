@@ -1,6 +1,6 @@
 import styles from "./NavBar.module.css";
 import Button from "../Button";
-import Bullet from "../../assets/Bullet Point.png";
+import Bullet from "../../assets/bullet_point.png";
 import MenuIcon from "../../assets/hamburger-menu-icon.svg";
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
