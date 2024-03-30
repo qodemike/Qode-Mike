@@ -1,5 +1,5 @@
 import styles from "./SkillSection.module.css";
-import BulletPoint from "../../assets/bullet point.png";
+import BulletPoint from "../../assets/bullet_point.png";
 import { useEffect, useRef } from "react";
 import { useIntersectionObserver } from "../../hooks/useIntersectionObserver";
 
