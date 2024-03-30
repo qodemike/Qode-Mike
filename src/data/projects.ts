@@ -1,11 +1,11 @@
 import GameHub from "../assets/Gamehub.webp";
-import GameHubCropped from "../assets/Gamehub-cropped.webp";
+import GameHubCropped from "../assets/Gamehub_cropped.webp";
 import Cloudy from "../assets/Cloudy.webp";
-import CloudyCropped from "../assets/Cloudy-cropped@1x.webp";
-import BugsterCropped from "../assets/Bugster-cropped.webp";
+import CloudyCropped from "../assets/Cloudy_cropped.webp";
 import Bugster from "../assets/Bugster.webp";
+import BugsterCropped from "../assets/Bugster_cropped.webp";
 import HotelApp from "../assets/Hotelapp.webp";
-import HotelAppCropped from "../assets/Hotelapp-cropped.webp";
+import HotelAppCropped from "../assets/Hotelapp_cropped.webp";
 import { Project } from "../entities/Project";
 
 export const projects: Project[] = [
