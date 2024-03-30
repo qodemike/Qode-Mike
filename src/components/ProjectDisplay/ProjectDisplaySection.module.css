@@ -129,11 +129,18 @@ fill: var(--color-accent-dark);
   .imgContainer > picture:hover::after {
     opacity: 0;
   }
+  
+}
+
+/* Table Behaviour */
+@media screen and (min-width: 768px) {
   .projectHeader{
-   flex-direction: row; 
-   justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
+
+/* Project card different behaviours */
 
 /* Upto Tablets */
 @media screen and (max-width: 1024px) {
@@ -144,16 +151,17 @@ fill: var(--color-accent-dark);
     width: 100%;
     background: rgba(8, 32, 50, 76%);
   }
-  .projectDetails {
-    width: 60%;
-    position: absolute;
-  }
+ 
 }
 
 /* Upto Mini Tablets */
 @media screen and (max-width: 768px) {
   .projectDetails {
     width: 80%;
+  }
+  .projectHeader{
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
