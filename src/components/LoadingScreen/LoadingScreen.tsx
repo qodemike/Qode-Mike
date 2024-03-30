@@ -1,5 +1,5 @@
 import styles from "./LoadingScreen.module.css";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import logo from "../../assets/Logo.svg";
 
 const LoadingScreen = () => {

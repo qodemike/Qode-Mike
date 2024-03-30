@@ -1,7 +1,7 @@
 import styles from "./ContactPage.module.css";
 import NumberedHeading from "../NumberedHeading";
 import Button from "../Button";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import LightBanner from "../../assets/LightBanner.svg";
 import DarkBanner from "../../assets/DarkBanner.svg";
 

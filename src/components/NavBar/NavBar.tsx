@@ -10,7 +10,7 @@ import logo from "../../assets/Logo.svg";
 const NavBar = () => {
   const [collapsed, setCollapsed] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
-  const [isHidden, setIsHidden] = useState(false);
+  const [, setIsHidden] = useState(false);
   const navigate = useNavigate();
 
   const handleNavigate = async (section: string) => {
