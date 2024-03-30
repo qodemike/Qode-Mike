@@ -29,7 +29,7 @@ const Skills = () => {
     <>
       <section className={styles.skillsAndServices}>
         <header className={styles.header}>
-          <h2>Things I can Do</h2>
+          <h2>My Skills and Services</h2>
           <div ref={lineRef} className={styles.line}></div>
         </header>
         <article>

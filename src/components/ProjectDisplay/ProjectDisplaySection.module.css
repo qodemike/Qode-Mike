@@ -50,6 +50,24 @@
 }
 
 /* Detail Section */
+.projectHeader{
+  width: 100%;
+  display: flex;
+  padding-left: 20px;
+  flex-direction: column-reverse;
+  align-items: start;
+  gap: 0.7rem;
+}
+.gitIcon{
+  width: 25px;
+  height: 25px;
+  fill: var(--color-accent);
+}
+
+.gitIcon:hover{
+fill: var(--color-accent-dark);
+}
+
 .projectTitle{
   cursor: pointer;
 }
@@ -63,18 +81,17 @@
   align-items: end;
   gap: 2vw ;
 }
-.projectDetails h3 {
+.projectTitle {
   text-wrap: nowrap;
   transition: all 0.1s ease;
 }
-.projectDetails h3:hover {
+.projectTitle:hover {
   color: var(--color-accent-dark);
 }
 
-.projectDetails p {
+.projectDescription {
   text-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
-  font-size: 1.5rem;
-  text-align: left;
+  font-size: 1.4rem;
   color: var(--color-body);
 }
 .iconList {
@@ -84,6 +101,7 @@
 .iconListItem > svg {
   width: 33px;
   height: 33px;
+  transition: all 2s ease;
 }
 
 .descriptionCard {
@@ -111,7 +129,10 @@
   .imgContainer > picture:hover::after {
     opacity: 0;
   }
-  
+  .projectHeader{
+   flex-direction: row; 
+   justify-content: space-between;
+  }
 }
 
 /* Upto Tablets */

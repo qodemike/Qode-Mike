@@ -17,7 +17,7 @@ const Footer = () => {
             )
             )}
         </ul>
-        <p className={styles.copyright} >Copyright @ 2022 Qode Mike</p>
+        <p className={styles.copyright} >Copyright @ 2024 Qode Mike</p>
     </div>
     </>
   )

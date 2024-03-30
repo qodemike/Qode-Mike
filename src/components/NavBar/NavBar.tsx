@@ -64,7 +64,7 @@ const NavBar = () => {
   return (
     <>
       <div
-        className={`${styles.header} ${isHidden? `${styles.moveUp}`: ""}  ${isVisible ? `${styles.visible}` : ""} ${collapsed ? `${styles.collapsed}` : ""}`}
+        className={`${styles.header}   ${isVisible && `${styles.visible}`} ${collapsed && `${styles.collapsed}`}`}
       >
         <nav className={styles.nav}>
           <div className={styles.logoWrapper}>

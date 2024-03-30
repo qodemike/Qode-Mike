@@ -16,7 +16,7 @@ const MyArsenal = () => {
     "Firebase",
     "Tailwind",
     "Material UI",
-    "My SQL",
+    "MySQL",
     "MongoDB",
     "Wordpress",
   ];

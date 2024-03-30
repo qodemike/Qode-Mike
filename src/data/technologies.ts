@@ -8,7 +8,7 @@ export const technologies = {
       "Material UI",
       "Chakra UI",
     ],
-    "Back-end Technologies": ["Node JS", "Express JS", "PHP", "Firebase"],
-    Database: ["MongoDB", "My SQL"],
+    "Back-end Technologies": ["Node JS", "Express JS", "PHP", "Firebase", "Next JS", "Prisma"],
+    Database: ["MongoDB", "MySQL"],
     "Design Tools": ["Adobe XD", "Illustrator", "Photoshop"],
   };

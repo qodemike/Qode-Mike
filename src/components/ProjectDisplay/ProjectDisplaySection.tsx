@@ -1,59 +1,71 @@
 import styles from "./ProjectDisplaySection.module.css";
 import LanguageIcons from "../../assets/sprite-languages.svg";
+import { useState } from "react";
+import { Project } from "../../entities/Project";
+import Sprite from "../../assets/sprite.svg";
+import { Link } from "react-router-dom";
 
-export interface Project {
-  title: string;
-  href: string;
-  source: {
-    default: string;
-    cropped: string;
-  };
-  description: string;
-  languages: string[];
-}
 interface Props {
   projects: Project[];
 }
 
 const ProjectDisplaySection = ({ projects }: Props) => {
+  const [iconIndex, setIconIndex] = useState<{
+    projectIndex: number;
+    languageIndex: number;
+  } | null>(null);
 
   const handleClick = (url: string) => {
-    window.open(url, '_blank');
-  }
-  
+    window.open(url, "_blank");
+  };
 
   return (
     <>
-      {projects.map((p, projectIndex) => (
+      {projects.map((project, projectIndex) => (
         <div key={projectIndex} className={styles.project}>
           <div
             data-aos="fade-up"
             data-aos-duration="1500"
             data-aos-offset="0"
-            onClick={() => handleClick(p.href)}
+            onClick={() => handleClick(project.href)}
             className={styles.imgContainer}
           >
-            <picture >
-              <source media="(max-width: 500px)" srcSet={p.source.cropped} />
+            <picture>
+              <source
+                media="(max-width: 500px)"
+                srcSet={project.source.cropped}
+              />
               <img
                 className={styles.projectImg}
-                src={p.source.default}
+                src={project.source.default}
                 alt="image of the project"
-                />
+              />
             </picture>
           </div>
 
           <div className={styles.projectDetails}>
-              <h3  onClick={() => handleClick(p.href)} className={styles.projectTitle}>{p.title}</h3>
+            <div className={styles.projectHeader}>
+              <Link to={project.git}>
+                <svg className={styles.gitIcon}>
+                  <use xlinkHref={`${Sprite}#git`} />
+                </svg>
+              </Link>
+              <h3
+                onClick={() => handleClick(project.href)}
+                className={styles.projectTitle}
+              >
+                {project.title}
+              </h3>
+            </div>
             <div
               data-aos="fade-right"
               data-aos-delay="300"
               className={styles.descriptionCard}
             >
-              <p>{p.description}</p>
+              <p className={styles.projectDescription}>{project.description}</p>
             </div>
             <ul className={styles.iconList}>
-              {p.languages.map((l, languageIndex) => {
+              {project.languages.map((language, languageIndex) => {
                 const delay = 100 * languageIndex;
                 return (
                   <li
@@ -62,9 +74,22 @@ const ProjectDisplaySection = ({ projects }: Props) => {
                     data-aos-offset="40"
                     key={languageIndex}
                     className={styles.iconListItem}
+                    title={`${language}`}
                   >
-                    <svg>
-                      <use xlinkHref={`${LanguageIcons}#${l}-fill`} />
+                    <svg
+                      onMouseEnter={() =>
+                        setIconIndex({ projectIndex, languageIndex })
+                      }
+                      onMouseLeave={() => setIconIndex(null)}
+                    >
+                      <use
+                        xlinkHref={`${LanguageIcons}#${language}${
+                          iconIndex?.projectIndex === projectIndex &&
+                          iconIndex.languageIndex === languageIndex
+                            ? ""
+                            : "-fill"
+                        }`}
+                      />
                     </svg>
                   </li>
                 );
