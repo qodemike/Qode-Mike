@@ -27,7 +27,7 @@ export const projects: Project[] = [
       default: HotelApp,
       cropped: HotelAppCropped,
     },
-    href: "#",
+    href: "https://hotelapp-m9qm.onrender.com",
     description:
       "A feature rich, production grade web app for hotel hunting. Showcasing advanced searches, payment processing, google maps apis, database design and more. A perfect example of putting it all together.",
     languages: ["React JS", "Tailwind", "Typescript", "Node JS", "MongoDB"],
