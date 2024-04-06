@@ -39,7 +39,7 @@
   z-index: 1;
   transform: scaleX(1);
   transform-origin: 0 0;
-  transition: all 1s ease;
+  transition: all .5s ease;
 }
 
 @media screen and (min-width: 1024px) {
@@ -48,10 +48,11 @@
     mix-blend-mode: multiply;
   }
   .imgCurtain > picture:hover::before {
-    opacity: 0;
+    transform: scaleX(0);
+
   }
   .imgCurtain > picture:hover::after {
-    opacity: 0;
+    transform: scaleX(0);
   }
 }
 
