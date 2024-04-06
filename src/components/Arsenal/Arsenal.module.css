@@ -8,6 +8,7 @@
 .text {
   margin-top: 3rem;
   max-width: 85rem;
+  text-align: center;
 }
 .text > span {
   color: var(--color-accent);
@@ -41,5 +42,8 @@
 @media screen and (min-width: 768px) {
     .iconList{
         justify-content: start;
+    }
+    .text{
+        text-align: start;
     }
 }
