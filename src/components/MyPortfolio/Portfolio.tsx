@@ -1,7 +1,7 @@
 import NumberedHeading from "../NumberedHeading";
-import styles from "./MyPortfolio.module.css";
+import styles from "./Portfolio.module.css";
 import { projects } from "../../data/projects";
-import ProjectDisplaySection from "../ProjectDisplay/ProjectDisplaySection";
+import ProjectDisplayGrid from "../ProjectDisplay/ProjectDisplaySection";
 
 const Portfolio = () => {
 
@@ -12,7 +12,7 @@ const Portfolio = () => {
           <NumberedHeading number="03." title="My Portfolio" />
         </header>
         <article>
-          <ProjectDisplaySection projects={projects}/>
+          <ProjectDisplayGrid projects={projects}/>
         </article>
       </section>
     </>

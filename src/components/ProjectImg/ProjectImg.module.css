@@ -1,0 +1,66 @@
+.projectImg {
+  object-fit: cover;
+  width: 100%;
+  cursor: pointer;
+}
+
+.imgCurtain {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 5px 12px 10px #03030d;
+  cursor: pointer;
+}
+
+.imgCurtain > picture::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-curtain);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  transform: scale(1);
+  transform-origin: 0 0;
+  transition: all 0.5s ease;
+}
+
+.imgCurtain > picture::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-curtain);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transform: scaleX(1);
+  transform-origin: 0 0;
+  transition: all 1s ease;
+}
+
+@media screen and (min-width: 1024px) {
+  .imgCurtain > picture::after {
+    backdrop-filter: grayscale(90%) contrast(1) brightness(100%);
+    mix-blend-mode: multiply;
+  }
+  .imgCurtain > picture:hover::before {
+    opacity: 0;
+  }
+  .imgCurtain > picture:hover::after {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .imgCurtain > picture::before {
+    width: 0;
+  }
+  .imgCurtain > picture::after {
+    width: 100%;
+    background: rgba(8, 32, 50, 76%);
+  }
+}

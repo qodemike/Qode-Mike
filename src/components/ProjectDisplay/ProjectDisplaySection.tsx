@@ -1,55 +1,36 @@
-import styles from "./ProjectDisplaySection.module.css";
+import styles from "./ProjectDisplayGrid.module.css";
 import LanguageIcons from "../../assets/sprite-languages.svg";
 import { useState } from "react";
 import { Project } from "../../entities/Project";
 import Sprite from "../../assets/sprite.svg";
+import ProjectImg from "../ProjectImg/ProjectImg";
 
 interface Props {
   projects: Project[];
 }
 
-const ProjectDisplaySection = ({ projects }: Props) => {
+const ProjectDisplayGrid = ({ projects }: Props) => {
   const [iconIndex, setIconIndex] = useState<{
     projectIndex: number;
     languageIndex: number;
   } | null>(null);
 
-  const handleClickImg = (url: string) => {
+  const handleClickRepo = (url: string) => {
     window.open(url, "_blank");
   };
-  const handleClickRepo = (url: string) => {
+
+  const handleClickLink = (url: string) => {
     window.open(url, "_blank");
   };
 
   return (
     <>
       {projects.map((project, projectIndex) => (
-        <div key={projectIndex} className={styles.project}>
-          <div
-            data-aos="fade-up"
-            data-aos-duration="1500"
-            data-aos-offset="0"
-            onClick={() => handleClickImg(project.href)}
-            className={styles.imgContainer}
-          >
-            <picture>
-              <source
-                media="(max-width: 500px)"
-                srcSet={project.source.cropped}
-              />
-              <img
-                className={styles.projectImg}
-                src={project.source.default}
-                alt="image of the project"
-              />
-            </picture>
-          </div>
+        <div key={projectIndex} className={styles.projectGrid}>
+          <ProjectImg project={project} />
 
           <div className={styles.projectDetails}>
-            <h3
-              onClick={() => handleClickImg(project.href)}
-              className={styles.projectTitle}
-            >
+            <h3 onClick={() => handleClickLink(project.href)} className={styles.projectTitle}>
               {project.title}
             </h3>
             <div
@@ -59,7 +40,7 @@ const ProjectDisplaySection = ({ projects }: Props) => {
             >
               <p className={styles.projectDescription}>{project.description}</p>
               <div className={styles.projectLinks}>
-                <svg onClick={() => handleClickImg(project.href)}>
+                <svg onClick={() => handleClickLink(project.href)}>
                   <use xlinkHref={`${Sprite}#external-link`} />
                 </svg>
                 <svg onClick={() => handleClickRepo(project.git)}>
@@ -105,4 +86,4 @@ const ProjectDisplaySection = ({ projects }: Props) => {
   );
 };
 
-export default ProjectDisplaySection;
+export default ProjectDisplayGrid;
