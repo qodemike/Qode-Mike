@@ -48,11 +48,9 @@ const ProjectDisplaySection = ({ projects }: Props) => {
 
           <div className={styles.projectDetails}>
             <div className={styles.projectHeader}>
-              <Link to={project.git}>
                 <svg className={styles.gitIcon} onClick={() => handleClickRepo(project.git)}>
                   <use xlinkHref={`${Sprite}#git`} />
                 </svg>
-              </Link>
               <h3
                 onClick={() => handleClickImg(project.href)}
                 className={styles.projectTitle}
