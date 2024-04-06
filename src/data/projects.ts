@@ -42,7 +42,7 @@ export const projects: Project[] = [
     href: "",
     description:
       "A blazingly fast issue tracking app designed to help team leaders keep track of new issues in their digital infrastructure, assign them to troubleshooters and oversee the flow. ",
-    languages: ["Next JS", "Tailwind", "MySQL", "Prisma", "Typescript"],
+    languages: ["Next JS", "Tailwind", "Postgresql", "Prisma", "Typescript"],
     git: "https://github.com/qodemike/bugster.git",
   },
   {

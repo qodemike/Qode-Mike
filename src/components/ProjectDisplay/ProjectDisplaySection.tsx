@@ -3,7 +3,6 @@ import LanguageIcons from "../../assets/sprite-languages.svg";
 import { useState } from "react";
 import { Project } from "../../entities/Project";
 import Sprite from "../../assets/sprite.svg";
-import { Link } from "react-router-dom";
 
 interface Props {
   projects: Project[];
@@ -19,8 +18,8 @@ const ProjectDisplaySection = ({ projects }: Props) => {
     window.open(url, "_blank");
   };
   const handleClickRepo = (url: string) => {
-    window.open(url, "_blank")
-  }
+    window.open(url, "_blank");
+  };
 
   return (
     <>
@@ -47,23 +46,26 @@ const ProjectDisplaySection = ({ projects }: Props) => {
           </div>
 
           <div className={styles.projectDetails}>
-            <div className={styles.projectHeader}>
-                <svg className={styles.gitIcon} onClick={() => handleClickRepo(project.git)}>
-                  <use xlinkHref={`${Sprite}#git`} />
-                </svg>
-              <h3
-                onClick={() => handleClickImg(project.href)}
-                className={styles.projectTitle}
-              >
-                {project.title}
-              </h3>
-            </div>
+            <h3
+              onClick={() => handleClickImg(project.href)}
+              className={styles.projectTitle}
+            >
+              {project.title}
+            </h3>
             <div
               data-aos="fade-right"
               data-aos-delay="300"
               className={styles.descriptionCard}
             >
               <p className={styles.projectDescription}>{project.description}</p>
+              <div className={styles.projectLinks}>
+                <svg onClick={() => handleClickImg(project.href)}>
+                  <use xlinkHref={`${Sprite}#external-link`} />
+                </svg>
+                <svg onClick={() => handleClickRepo(project.git)}>
+                  <use xlinkHref={`${Sprite}#github-logo`} />
+                </svg>
+              </div>
             </div>
             <ul className={styles.iconList}>
               {project.languages.map((language, languageIndex) => {

@@ -9,6 +9,6 @@ export const technologies = {
       "Chakra UI",
     ],
     "Back-end Technologies": ["Node JS", "Express JS", "PHP", "Firebase", "Next JS", "Prisma"],
-    Database: ["MongoDB", "MySQL"],
+    Database: ["MongoDB", "MySQL", "Postgresql"],
     "Design Tools": ["Adobe XD", "Illustrator", "Photoshop"],
   };

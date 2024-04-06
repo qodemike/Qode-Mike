@@ -39,7 +39,7 @@
   content: "";
   width: 100%;
   height: 100%;
-  background-color:var(--color-curtain);
+  background-color: var(--color-curtain);
   position: absolute;
   top: 0;
   left: 0;
@@ -50,25 +50,18 @@
 }
 
 /* Detail Section */
-.projectHeader{
-  width: 100%;
-  display: flex;
-  padding-left: 20px;
-  flex-direction: column-reverse;
-  align-items: start;
-  gap: 0.7rem;
-}
-.gitIcon{
+
+.gitIcon {
   width: 25px;
   height: 25px;
   fill: var(--color-accent);
 }
 
-.gitIcon:hover{
-fill: var(--color-accent-dark);
+.gitIcon:hover {
+  fill: var(--color-accent-dark);
 }
 
-.projectTitle{
+.projectTitle {
   cursor: pointer;
 }
 
@@ -79,7 +72,7 @@ fill: var(--color-accent-dark);
   flex-direction: column;
   justify-content: center;
   align-items: end;
-  gap: 2vw ;
+  gap: 2vw;
 }
 .projectTitle {
   text-wrap: nowrap;
@@ -94,6 +87,22 @@ fill: var(--color-accent-dark);
   font-size: 1.4rem;
   color: var(--color-body);
 }
+.projectLinks {
+  color: var(--color-accent);
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 15px;
+}
+.projectLinks > svg {
+  width: 22px;
+  height: 22px;
+}
+.projectLinks > svg:hover {
+  color: var(--color-accent-dark);
+  cursor: pointer;
+}
+
 .iconList {
   display: flex;
   gap: 20px;
@@ -119,7 +128,7 @@ fill: var(--color-accent-dark);
 
 /* Desktop Behaviour */
 @media screen and (min-width: 1024px) {
-  .imgContainer > picture::after{
+  .imgContainer > picture::after {
     backdrop-filter: grayscale(90%) contrast(1) brightness(100%);
     mix-blend-mode: multiply;
   }
@@ -129,12 +138,11 @@ fill: var(--color-accent-dark);
   .imgContainer > picture:hover::after {
     opacity: 0;
   }
-  
 }
 
 /* Table Behaviour */
 @media screen and (min-width: 768px) {
-  .projectHeader{
+  .projectHeader {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -151,7 +159,6 @@ fill: var(--color-accent-dark);
     width: 100%;
     background: rgba(8, 32, 50, 76%);
   }
- 
 }
 
 /* Upto Mini Tablets */
@@ -159,7 +166,7 @@ fill: var(--color-accent-dark);
   .projectDetails {
     width: 80%;
   }
-  .projectHeader{
+  .projectHeader {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -167,7 +174,7 @@ fill: var(--color-accent-dark);
 
 /* Phones */
 @media screen and (max-width: 500px) {
-    .descriptionCard{
-      width: 270px;
-    }
+  .descriptionCard {
+    width: 270px;
+  }
 }
