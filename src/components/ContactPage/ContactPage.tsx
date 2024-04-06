@@ -30,7 +30,7 @@ const ContactPage = () => {
     <>
       <section id="ContactPage" className={styles.contactPage}>
         <header className={styles.header}>
-          <NumberedHeading number="04." title="Intiate Qode Mike" />
+          <p className={styles.title}>04. Initiate Qode Mike</p>
         </header>
         <article className={styles.contactDetails}>
           <picture className={styles.imgWrapper}>

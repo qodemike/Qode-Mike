@@ -4,6 +4,12 @@
     margin: auto;
     max-width: 300px;
 }
+.title{
+    text-align: center;
+    font-family: SFMono;
+    font-size: 1.6rem;
+    color: var(--color-accent);
+}
 .contactDetails{
     display: flex;
     flex-direction: column;
