@@ -1,6 +1,6 @@
 .projectGrid {
   margin: auto;
-  margin-bottom: 15rem;
+  padding-bottom: 15rem;
   display: flex;
   align-items: center;
 }
@@ -89,15 +89,13 @@
 
 @media screen and (min-width: 1024px) {
   .projectGrid{
-    width: 900px;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    align-items: center;
-    
+    max-width: 850px;
+    display: flex;
+    justify-content: center;
   }
   .projectDetails{
     position: relative;
-    right: 30px
+    max-width: 300px;
   }
 }
 
