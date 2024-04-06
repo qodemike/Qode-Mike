@@ -29,7 +29,7 @@ export const projects: Project[] = [
     },
     href: "https://hotelapp-m9qm.onrender.com",
     description:
-      "A feature rich, production grade web app for hotel hunting. Showcasing advanced searches, payment processing, google maps apis, database design and more. A perfect example of putting it all together.",
+      "A feature rich, production grade web app for finding and listing hotels. Showcasing advanced searches, payment processing, google apis, database design and a lot more.",
     languages: ["React JS", "Tailwind", "Typescript", "Node JS", "MongoDB"],
     git: "https://github.com/qodemike/hotel-app.git",
   },
