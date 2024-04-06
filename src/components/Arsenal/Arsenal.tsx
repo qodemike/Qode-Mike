@@ -4,7 +4,7 @@ import icons from "../../assets/sprite-languages.svg";
 import Button from "../Button";
 import { Link } from "react-router-dom";
 
-const MyArsenal = () => {
+const Arsenal = () => {
   const languages = [
     "HTML",
     "CSS",
@@ -53,4 +53,4 @@ const MyArsenal = () => {
   );
 };
 
-export default MyArsenal;
+export default Arsenal;

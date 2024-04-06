@@ -1,3 +1,3 @@
-import MyArsenal from './Arsenal';
+import Arsenal from './Arsenal';
 
-export default MyArsenal;
+export default Arsenal;
