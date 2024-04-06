@@ -15,9 +15,12 @@ const ProjectDisplaySection = ({ projects }: Props) => {
     languageIndex: number;
   } | null>(null);
 
-  const handleClick = (url: string) => {
+  const handleClickImg = (url: string) => {
     window.open(url, "_blank");
   };
+  const handleClickRepo = (url: string) => {
+    window.open(url, "_blank")
+  }
 
   return (
     <>
@@ -27,7 +30,7 @@ const ProjectDisplaySection = ({ projects }: Props) => {
             data-aos="fade-up"
             data-aos-duration="1500"
             data-aos-offset="0"
-            onClick={() => handleClick(project.href)}
+            onClick={() => handleClickImg(project.href)}
             className={styles.imgContainer}
           >
             <picture>
@@ -46,12 +49,12 @@ const ProjectDisplaySection = ({ projects }: Props) => {
           <div className={styles.projectDetails}>
             <div className={styles.projectHeader}>
               <Link to={project.git}>
-                <svg className={styles.gitIcon}>
+                <svg className={styles.gitIcon} onClick={() => handleClickRepo(project.git)}>
                   <use xlinkHref={`${Sprite}#git`} />
                 </svg>
               </Link>
               <h3
-                onClick={() => handleClick(project.href)}
+                onClick={() => handleClickImg(project.href)}
                 className={styles.projectTitle}
               >
                 {project.title}
