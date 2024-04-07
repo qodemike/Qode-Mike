@@ -37,28 +37,7 @@ const AboutMe = () => {
               <span>production grade APIs</span> and scalable web solutions for
               clients joining the <span> e-commerce industry </span>.
             </p>
-            <p
-              data-aos="fade-right"
-              data-aos-delay="300"
-              data-aos-offset="-100"
-              className={styles.paragraph}
-            >
-              Before settling for freelance, I've had the privilege of working
-              as:
-            </p>
-            <div
-              data-aos="fade-right"
-              data-aos-delay="400"
-              data-aos-offset="-100"
-              className={styles.workExperience}
-            >
-              <img src={BulletPoint} alt="" />
-              <div className={styles.workExperienceDetails}>
-                <span className={styles.role}>Software Developer</span>
-                <span className={styles.company}> @ Canaan Developers</span>
-                <span className={styles.duration}>Jan 2021 - Sep 2022</span>
-              </div>
-            </div>
+            
           </div>
           <div
             data-aos="fade-up"

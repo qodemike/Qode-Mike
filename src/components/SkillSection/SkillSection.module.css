@@ -1,9 +1,8 @@
 .skillsAndServices {
   margin: 0 auto;
-  padding: 0 0 12rem;
+  padding: 0 0 0rem;
   max-width: 50rem;
 }
-
 .skillsAndServices > article {
   margin-top: 3rem;
 }

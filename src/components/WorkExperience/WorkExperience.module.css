@@ -1,0 +1,74 @@
+.workExperience {
+  margin: auto;
+}
+.header {
+  display: flex;
+  align-items: center;
+}
+.title {
+  white-space: nowrap;
+  font-size: 2.2rem
+}
+.body {
+  margin-top: 3rem;
+}
+.workExperienceDetails {
+  font-family: Inter;
+  font-size: 1.6rem;
+}
+.role {
+  color: var(--color-body);
+  font-weight: bold;
+}
+.company {
+  color: var(--color-accent);
+  font-weight: bold;
+}
+.duration {
+  display: block;
+  margin-top: 1rem;
+  font-family: SFMono;
+  font-size: 1.3rem;
+  white-space: nowrap;
+  color: var(--color-secondary);
+}
+.line {
+display: none;
+  width: 100%;
+  max-width: 330px;
+  margin-left: 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+.responsibilityList {
+  margin-top: 2.5rem;
+}
+.responsibility {
+  max-width: 60rem;
+  margin-top: 1rem;
+  display: flex;
+  align-items: start;
+}
+.responsibility > p {
+  font-size: 1.4rem;
+  margin-left: 2rem;
+}
+.responsibility > img {
+  margin-top: 1.1rem;
+}
+@media screen and (min-width: 768px) {
+  .title {
+    white-space: nowrap;
+  }
+  .body{
+  margin-left: 3rem;
+
+  }
+  .line{
+    display: inline;
+  }
+}
+@media screen and (min-width: 1024px) {
+    .workExperience{
+        margin-left: 5rem;
+    }
+}

@@ -8,10 +8,9 @@ const Skills = () => {
   const services = [
     "Front-end and Back-end development.",
     "Development of Industry standard APIs.",
-    "Highly scalable e-commerce web applications.",
+    "Highly scalable web applications.",
     "Database design, modeling and development.",
     "Search Engine Optimization.",
-    "Progressive Web Applications.",
     "Unit test, Integration test and end-to-end testing.",
     "Payment processing gateways.",
   ];

@@ -1,5 +1,6 @@
 .aboutMe {
   transition: transform 1s ease-in;
+  padding-bottom: 2rem;
 }
 
 /* Article  */
