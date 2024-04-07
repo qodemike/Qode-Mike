@@ -3,7 +3,6 @@ import BulletPoint from "../../assets/bullet_point.png";
 import { useEffect, useRef } from "react";
 import { useIntersectionObserver } from "../../hooks/useIntersectionObserver";
 
-
 const Skills = () => {
   const services = [
     "Front-end and Back-end development.",
@@ -17,12 +16,11 @@ const Skills = () => {
 
   const lineRef = useRef<HTMLDivElement>(null);
 
-  useEffect( () => {
-    useIntersectionObserver( lineRef.current,  () => {
+  useEffect(() => {
+    useIntersectionObserver(lineRef.current, () => {
       lineRef.current?.classList.add(styles.action);
-    })
-
-  }, [])
+    });
+  }, []);
 
   return (
     <>
@@ -33,12 +31,11 @@ const Skills = () => {
         </header>
         <article>
           <ul>
-            {services.map((s, index) => {
-              return <li key={index} className={styles.service}>
+            {services.map((s, index) => (
+              <li key={index} className={styles.service}>
                 <img src={BulletPoint} /> <p>{s}</p>
               </li>
-            }
-            )}
+            ))}
           </ul>
         </article>
       </section>

@@ -1,6 +1,6 @@
 .skillsAndServices {
   margin: 0 auto;
-  padding: 0 0 0rem;
+  padding: 0 0 7rem;
   max-width: 50rem;
 }
 .skillsAndServices > article {
@@ -26,14 +26,14 @@
 }
 
 .service {
-  margin-bottom: 1.8rem;
+  margin-bottom: 1.4rem;
   display: flex;
   align-items: start;
 }
 .service > p {
   color: var(--color-secondary);
   margin-left: 2rem;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 .service > img{
     margin-top: 1.1rem;
