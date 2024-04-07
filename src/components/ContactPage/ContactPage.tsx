@@ -1,5 +1,4 @@
 import styles from "./ContactPage.module.css";
-import NumberedHeading from "../NumberedHeading";
 import Button from "../Button";
 import { useEffect, useState } from "react";
 import LightBanner from "../../assets/LightBanner.svg";
@@ -28,7 +27,7 @@ const ContactPage = () => {
 
   return (
     <>
-      <section id="ContactPage" className={styles.contactPage}>
+      <section id="Contact" className={styles.contactPage}>
         <header className={styles.header}>
           <p className={styles.title}>04. Initiate Qode Mike</p>
         </header>

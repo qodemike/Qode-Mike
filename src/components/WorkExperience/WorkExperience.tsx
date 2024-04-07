@@ -4,7 +4,7 @@ import BulletPoint from "../../assets/bullet_point.png";
 
 const WorkExperience = () => {
   return (
-    <section id="experience" className={styles.workExperience}>
+    <section id="Experience" className={styles.workExperience}>
       <header className={styles.header}>
         <h2 className={styles.title}>Relevant Work Experience</h2>
         <div className={styles.line}></div>
