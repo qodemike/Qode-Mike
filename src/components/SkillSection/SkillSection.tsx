@@ -5,10 +5,10 @@ import { useIntersectionObserver } from "../../hooks/useIntersectionObserver";
 
 const Skills = () => {
   const services = [
-    "Front-end and Back-end development.",
-    "Development of Industry standard APIs.",
-    "Highly scalable web applications.",
-    "Database design, modeling and development.",
+    "Front-end and Back-end development",
+    "Building of Industry standard APIs",
+    "Development of highly scalable web apps",
+    "Database design and modeling",
     "Search Engine Optimization.",
     "Unit test, Integration test and end-to-end testing.",
     "Payment processing gateways.",

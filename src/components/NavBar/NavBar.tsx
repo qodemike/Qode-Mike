@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { scroller } from "react-scroll";
 import logo from "../../assets/Logo.svg";
+import PDF from "../../assets/Resume.pdf";
 
 const NavBar = () => {
   const [collapsed, setCollapsed] = useState(false);
@@ -20,6 +21,10 @@ const NavBar = () => {
       smooth: true,
       duration: 500,
     });
+  };
+
+  const handleOpenResume = () => {
+    window.open(PDF, "_blank");
   };
 
   const resizeOnDeviceChange = () => {
@@ -114,11 +119,12 @@ const NavBar = () => {
               </a>
             </li>
             <li>
-              <a onClick={() => handleNavigate("ContactPage")}>
-                <Button style={{ padding: "var(--padding-small)" }}>
-                  See Resume
-                </Button>
-              </a>
+              <Button
+                onClick={handleOpenResume}
+                style={{ padding: "var(--padding-small)" }}
+                >
+                See Resume
+              </Button>
             </li>
           </ul>
           <button

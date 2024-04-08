@@ -9,7 +9,7 @@ const experiences: Experience[] = [
   {
     role: "Backend Developer",
     company: "@ EGM Securities",
-    duration: "Dec 2022 - Jan 2024",
+    duration: "Jan 2021 - Oct 2023",
     responsibilities: [
       "Design and development of production grade APIs and code base maintainance ",
       "Work alongside creative directors to lead the research, development, and architecture of technical solutions to fulfill business requirements",
@@ -20,7 +20,7 @@ const experiences: Experience[] = [
   {
     role: "Frontend Developer",
     company: "@ Canaan Developers",
-    duration: "Sep 2021 - Nov 2022",
+    duration: "Sep 2020 - Nov 2021",
     responsibilities: [
       "Developed responsive and interactive web applications with popular frontend technologies like React and more ",
       "Collaborated with designers and engineers on pro bono projects to design robust systems for organization",
