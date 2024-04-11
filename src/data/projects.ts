@@ -15,7 +15,7 @@ export const projects: Project[] = [
       default: GameHub,
       cropped: GameHubCropped,
     },
-    href: "#",
+    href: "https://gamehub-v1.vercel.app/",
     description:
       "A web app designed to assist in video game discovery. Find new releases, ratings, trends, trailers, gameplays and screenshots of your favourite games.",
     languages: ["React JS", "Chakra UI", "Typescript", "Firebase", "MongoDB"],
